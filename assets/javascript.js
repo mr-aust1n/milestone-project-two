@@ -1,5 +1,4 @@
 //API HIDDEN
-
 require("dotenv").config();
 
-process.env.WEATHER_API_KEY;
+console.log(process.env.WEATHER_API_KEY);
