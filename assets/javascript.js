@@ -77,8 +77,7 @@ function fetchWeatherData() {
         "//cdn.weatherapi.com/weather/64x64/".length
       );
 
-      // Adjust paths for GitHub Pages (ensure icons and images are in the correct directory)
-      icon.src = `./icons/${iconId}`;
+      icon.src = `icons/${iconId}`;
 
       cloudOutput.innerHTML = data.current.cloud + "%";
       humidityOutput.innerHTML = data.current.humidity + "%";
