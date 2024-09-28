@@ -1,12 +1,10 @@
-require("dotenv").config();
-
-const WEATHER_API_KEY = "aa16b9821b62487b835175533242809"; // Your new API key
+const WEATHER_API_KEY = "aa16b9821b62487b835175533242809"; // Your API key
 
 const app = document.querySelector(".weather-app");
 const temp = document.querySelector(".temp");
 const dateOutput = document.querySelector(".date");
 const timeOutput = document.querySelector(".time");
-const conditionOutput = document.querySelector(".condition");
+const conditionOutput = document.querySelector(".conditions"); // Updated selector
 const nameOutput = document.querySelector(".name");
 const icon = document.querySelector(".icon");
 const cloudOutput = document.querySelector(".cloud");
@@ -28,7 +26,7 @@ cities.forEach((city) => {
 });
 
 form.addEventListener("submit", (e) => {
-  const search = document.getElementById("search"); // Assuming this is the input field
+  const search = document.querySelector(".search"); // Corrected to querySelector for class
   if (search.value.length == 0) {
     alert("Please type in a city name");
   } else {
@@ -59,7 +57,7 @@ function fetchWeatherData() {
   )
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
+      console.log(data); // To check the API response in console
 
       temp.innerHTML = data.current.temp_c + "&#176;";
       conditionOutput.innerHTML = data.current.condition.text;
@@ -79,18 +77,15 @@ function fetchWeatherData() {
         "//cdn.weatherapi.com/weather/64x64/".length
       );
 
-      icon.src = "./icons/" + iconId;
+      icon.src = `./icons/${iconId}`; // Ensure you have icons
 
       cloudOutput.innerHTML = data.current.cloud + "%";
       humidityOutput.innerHTML = data.current.humidity + "%";
       windOutput.innerHTML = data.current.wind_kph + " km/h";
 
-      let timeOfDay = "day";
+      let timeOfDay = data.current.is_day ? "day" : "night";
 
       const code = data.current.condition.code;
-      if (!data.current.is_day) {
-        timeOfDay = "night";
-      }
 
       // Setting background images based on weather condition
       if (code === 1000) {
@@ -124,7 +119,8 @@ function fetchWeatherData() {
 
       app.style.opacity = "1";
     })
-    .catch(() => {
+    .catch((error) => {
+      console.error("Error:", error);
       alert("City Not Found, Please try again");
       app.style.opacity = "1";
     });
