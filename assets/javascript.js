@@ -1,10 +1,10 @@
-const WEATHER_API_KEY = "aa16b9821b62487b835175533242809"; // Your API key
+const WEATHER_API_KEY = "aa16b9821b62487b835175533242809"; // API key
 
 const app = document.querySelector(".weather-app");
 const temp = document.querySelector(".temp");
 const dateOutput = document.querySelector(".date");
 const timeOutput = document.querySelector(".time");
-const conditionOutput = document.querySelector(".conditions"); // Updated selector
+const conditionOutput = document.querySelector(".conditions");
 const nameOutput = document.querySelector(".name");
 const icon = document.querySelector(".icon");
 const cloudOutput = document.querySelector(".cloud");
@@ -26,7 +26,7 @@ cities.forEach((city) => {
 });
 
 form.addEventListener("submit", (e) => {
-  const search = document.querySelector(".search"); // Corrected to querySelector for class
+  const search = document.querySelector(".search");
   if (search.value.length == 0) {
     alert("Please type in a city name");
   } else {
@@ -77,7 +77,7 @@ function fetchWeatherData() {
         "//cdn.weatherapi.com/weather/64x64/".length
       );
 
-      icon.src = `./icons/${iconId}`; // Ensure you have icons
+      icon.src = `icons/${iconId}`; // Ensure you have icons
 
       cloudOutput.innerHTML = data.current.cloud + "%";
       humidityOutput.innerHTML = data.current.humidity + "%";
@@ -89,7 +89,7 @@ function fetchWeatherData() {
 
       // Setting background images based on weather condition
       if (code === 1000) {
-        app.style.backgroundImage = `url(./images/${timeOfDay}/clear.jpg)`;
+        app.style.backgroundImage = `url(images/${timeOfDay}/clear.jpg)`;
         btn.style.background = timeOfDay === "night" ? "#181e27" : "#e5ba92";
       } else if (
         code === 1003 ||
@@ -104,16 +104,16 @@ function fetchWeatherData() {
         code === 1279 ||
         code === 1282
       ) {
-        app.style.backgroundImage = `url(./images/${timeOfDay}/cloudy.jpg)`;
+        app.style.backgroundImage = `url(images/${timeOfDay}/cloudy.jpg)`;
         btn.style.background = timeOfDay === "night" ? "#181e27" : "#fa6d1b";
       } else if (
         (code >= 1063 && code <= 1207) ||
         (code >= 1240 && code <= 1252)
       ) {
-        app.style.backgroundImage = `url(./images/${timeOfDay}/rainy.jpg)`;
+        app.style.backgroundImage = `url(images/${timeOfDay}/rainy.jpg)`;
         btn.style.background = timeOfDay === "night" ? "#325c80" : "#647d75";
       } else {
-        app.style.backgroundImage = `url(./images/${timeOfDay}/snow.jpg)`;
+        app.style.backgroundImage = `url(images/${timeOfDay}/snow.jpg)`;
         btn.style.background = timeOfDay === "night" ? "#1b1b1b" : "#4d72aa";
       }
 
