@@ -82,7 +82,7 @@ function fetchWeatherData() {
       const conditionCode = data.current.condition.code;
 
       // Icons day/night folder
-      icon.src = `./icons/${timeOfDay}/${conditionCode}.svg`;
+      icon.src = `assets/icons/${timeOfDay}/${conditionCode}.svg`;
 
       cloudOutput.innerHTML = data.current.cloud + "%";
       humidityOutput.innerHTML = data.current.humidity + "%";
@@ -90,7 +90,7 @@ function fetchWeatherData() {
 
       // Setting background images based on weather condition
       if (conditionCode === 1000) {
-        app.style.backgroundImage = `url(./images/${timeOfDay}/clear.jpg)`;
+        app.style.backgroundImage = `url(assets/images/${timeOfDay}/clear.jpg)`;
         btn.style.background = timeOfDay === "night" ? "#181e27" : "#e5ba92";
       } else if (
         conditionCode === 1003 ||
@@ -105,16 +105,16 @@ function fetchWeatherData() {
         conditionCode === 1279 ||
         conditionCode === 1282
       ) {
-        app.style.backgroundImage = `url(./images/${timeOfDay}/cloudy.jpg)`;
+        app.style.backgroundImage = `url(assets/images/${timeOfDay}/cloudy.jpg)`;
         btn.style.background = timeOfDay === "night" ? "#181e27" : "#fa6d1b";
       } else if (
         (conditionCode >= 1063 && conditionCode <= 1207) ||
         (conditionCode >= 1240 && conditionCode <= 1252)
       ) {
-        app.style.backgroundImage = `url(./images/${timeOfDay}/rainy.jpg)`;
+        app.style.backgroundImage = `url(assets/images/${timeOfDay}/rainy.jpg)`;
         btn.style.background = timeOfDay === "night" ? "#325c80" : "#647d75";
       } else {
-        app.style.backgroundImage = `url(./images/${timeOfDay}/snow.jpg)`;
+        app.style.backgroundImage = `url(assets/images/${timeOfDay}/snow.jpg)`;
         btn.style.background = timeOfDay === "night" ? "#1b1b1b" : "#4d72aa";
       }
 
