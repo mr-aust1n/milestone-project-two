@@ -77,7 +77,7 @@ function fetchWeatherData() {
         "//cdn.weatherapi.com/weather/64x64/".length
       );
 
-      icon.src = `icons/${iconId}`;
+      icon.src = `assets/icons/${iconId}`;
 
       cloudOutput.innerHTML = data.current.cloud + "%";
       humidityOutput.innerHTML = data.current.humidity + "%";
