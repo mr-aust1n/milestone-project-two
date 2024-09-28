@@ -1,4 +1,4 @@
-const WEATHER_API_KEY = "aa16b9821b62487b835175533242809"; // API key
+const WEATHER_API_KEY = "aa16b9821b62487b835175533242809"; // Your API key
 
 const app = document.querySelector(".weather-app");
 const temp = document.querySelector(".temp");
@@ -17,6 +17,7 @@ const cities = document.querySelectorAll(".city");
 // DEFAULT LOCATION
 let cityInput = "Nottingham";
 
+// Event listeners for city buttons
 cities.forEach((city) => {
   city.addEventListener("click", (e) => {
     cityInput = e.target.innerHTML;
@@ -57,8 +58,9 @@ function fetchWeatherData() {
   )
     .then((response) => response.json())
     .then((data) => {
-      console.log(data); // To check the API response in console
+      console.log(data);
 
+      // Update the weather data on the page
       temp.innerHTML = data.current.temp_c + "&#176;";
       conditionOutput.innerHTML = data.current.condition.text;
 
@@ -73,11 +75,11 @@ function fetchWeatherData() {
 
       nameOutput.innerHTML = data.location.name;
 
-      const iconId = data.current.condition.icon.substr(
-        "//cdn.weatherapi.com/weather/64x64/".length
-      );
+      // Getting the weather condition code from the API response
+      const conditionCode = data.current.condition.code;
 
-      icon.src = `assets/icons/${iconId}`;
+      //Icons code
+      icon.src = `assets/icons/${conditionCode}.svg`;
 
       cloudOutput.innerHTML = data.current.cloud + "%";
       humidityOutput.innerHTML = data.current.humidity + "%";
@@ -89,7 +91,7 @@ function fetchWeatherData() {
 
       // Setting background images based on weather condition
       if (code === 1000) {
-        app.style.backgroundImage = `url(assets/images/night/${timeOfDay}/clear.jpg)`;
+        app.style.backgroundImage = `url(assets/images/${timeOfDay}/clear.jpg)`;
         btn.style.background = timeOfDay === "night" ? "#181e27" : "#e5ba92";
       } else if (
         code === 1003 ||
@@ -110,10 +112,10 @@ function fetchWeatherData() {
         (code >= 1063 && code <= 1207) ||
         (code >= 1240 && code <= 1252)
       ) {
-        app.style.backgroundImage = `url(assets/images/${timeOfDay}/rainy.jpg)`;
+        app.style.backgroundImage = `url(./images/${timeOfDay}/rainy.jpg)`;
         btn.style.background = timeOfDay === "night" ? "#325c80" : "#647d75";
       } else {
-        app.style.backgroundImage = `url(assets/images/${timeOfDay}/snow.jpg)`;
+        app.style.backgroundImage = `url(./images/${timeOfDay}/snow.jpg)`;
         btn.style.background = timeOfDay === "night" ? "#1b1b1b" : "#4d72aa";
       }
 
@@ -126,6 +128,6 @@ function fetchWeatherData() {
     });
 }
 
-// Call function for default city on load
+// Call the function for default city on page load
 fetchWeatherData();
 app.style.opacity = "1";
