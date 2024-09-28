@@ -53,7 +53,7 @@ function dayOfTheWeek(day, month, year) {
 
 function fetchWeatherData() {
   fetch(
-    `http://api.weatherapi.com/v1/current.json?key=${WEATHER_API_KEY}&q=${cityInput}`
+    `https://api.weatherapi.com/v1/current.json?key=${WEATHER_API_KEY}&q=${cityInput}`
   )
     .then((response) => response.json())
     .then((data) => {
@@ -77,7 +77,8 @@ function fetchWeatherData() {
         "//cdn.weatherapi.com/weather/64x64/".length
       );
 
-      icon.src = `icons/${iconId}`; // Ensure you have icons
+      // Adjust paths for GitHub Pages (ensure icons and images are in the correct directory)
+      icon.src = `./icons/${iconId}`;
 
       cloudOutput.innerHTML = data.current.cloud + "%";
       humidityOutput.innerHTML = data.current.humidity + "%";
@@ -89,7 +90,7 @@ function fetchWeatherData() {
 
       // Setting background images based on weather condition
       if (code === 1000) {
-        app.style.backgroundImage = `url(images/${timeOfDay}/clear.jpg)`;
+        app.style.backgroundImage = `url(./images/${timeOfDay}/clear.jpg)`;
         btn.style.background = timeOfDay === "night" ? "#181e27" : "#e5ba92";
       } else if (
         code === 1003 ||
@@ -104,16 +105,16 @@ function fetchWeatherData() {
         code === 1279 ||
         code === 1282
       ) {
-        app.style.backgroundImage = `url(images/${timeOfDay}/cloudy.jpg)`;
+        app.style.backgroundImage = `url(./images/${timeOfDay}/cloudy.jpg)`;
         btn.style.background = timeOfDay === "night" ? "#181e27" : "#fa6d1b";
       } else if (
         (code >= 1063 && code <= 1207) ||
         (code >= 1240 && code <= 1252)
       ) {
-        app.style.backgroundImage = `url(images/${timeOfDay}/rainy.jpg)`;
+        app.style.backgroundImage = `url(./images/${timeOfDay}/rainy.jpg)`;
         btn.style.background = timeOfDay === "night" ? "#325c80" : "#647d75";
       } else {
-        app.style.backgroundImage = `url(images/${timeOfDay}/snow.jpg)`;
+        app.style.backgroundImage = `url(./images/${timeOfDay}/snow.jpg)`;
         btn.style.background = timeOfDay === "night" ? "#1b1b1b" : "#4d72aa";
       }
 
@@ -126,5 +127,6 @@ function fetchWeatherData() {
     });
 }
 
+// Call function for default city on load
 fetchWeatherData();
 app.style.opacity = "1";
