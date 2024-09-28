@@ -89,7 +89,7 @@ function fetchWeatherData() {
 
       // Setting background images based on weather condition
       if (code === 1000) {
-        app.style.backgroundImage = `url(assets/images/${timeOfDay}/clear.jpg)`;
+        app.style.backgroundImage = `url(assets/images/night/${timeOfDay}/clear.jpg)`;
         btn.style.background = timeOfDay === "night" ? "#181e27" : "#e5ba92";
       } else if (
         code === 1003 ||
