@@ -75,42 +75,41 @@ function fetchWeatherData() {
 
       nameOutput.innerHTML = data.location.name;
 
-      // Getting the weather condition code from the API response
+      // day or night
+      let timeOfDay = data.current.is_day ? "day" : "night";
+
+      // weather condition code
       const conditionCode = data.current.condition.code;
 
-      //Icons code
-      icon.src = `assets/icons/${conditionCode}.svg`;
+      // Icons day/night folder
+      icon.src = `./icons/${timeOfDay}/${conditionCode}.svg`;
 
       cloudOutput.innerHTML = data.current.cloud + "%";
       humidityOutput.innerHTML = data.current.humidity + "%";
       windOutput.innerHTML = data.current.wind_kph + " km/h";
 
-      let timeOfDay = data.current.is_day ? "day" : "night";
-
-      const code = data.current.condition.code;
-
       // Setting background images based on weather condition
-      if (code === 1000) {
-        app.style.backgroundImage = `url(assets/images/${timeOfDay}/clear.jpg)`;
+      if (conditionCode === 1000) {
+        app.style.backgroundImage = `url(./images/${timeOfDay}/clear.jpg)`;
         btn.style.background = timeOfDay === "night" ? "#181e27" : "#e5ba92";
       } else if (
-        code === 1003 ||
-        code === 1006 ||
-        code === 1009 ||
-        code === 1030 ||
-        code === 1069 ||
-        code === 1087 ||
-        code === 1135 ||
-        code === 1273 ||
-        code === 1276 ||
-        code === 1279 ||
-        code === 1282
+        conditionCode === 1003 ||
+        conditionCode === 1006 ||
+        conditionCode === 1009 ||
+        conditionCode === 1030 ||
+        conditionCode === 1069 ||
+        conditionCode === 1087 ||
+        conditionCode === 1135 ||
+        conditionCode === 1273 ||
+        conditionCode === 1276 ||
+        conditionCode === 1279 ||
+        conditionCode === 1282
       ) {
-        app.style.backgroundImage = `url(assets/images/${timeOfDay}/cloudy.jpg)`;
+        app.style.backgroundImage = `url(./images/${timeOfDay}/cloudy.jpg)`;
         btn.style.background = timeOfDay === "night" ? "#181e27" : "#fa6d1b";
       } else if (
-        (code >= 1063 && code <= 1207) ||
-        (code >= 1240 && code <= 1252)
+        (conditionCode >= 1063 && conditionCode <= 1207) ||
+        (conditionCode >= 1240 && conditionCode <= 1252)
       ) {
         app.style.backgroundImage = `url(./images/${timeOfDay}/rainy.jpg)`;
         btn.style.background = timeOfDay === "night" ? "#325c80" : "#647d75";
@@ -128,6 +127,6 @@ function fetchWeatherData() {
     });
 }
 
-// Call the function for default city on page load
+// Call the function for the default city on page load
 fetchWeatherData();
 app.style.opacity = "1";
