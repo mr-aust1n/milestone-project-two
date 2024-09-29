@@ -1,4 +1,4 @@
-const WEATHER_API_KEY = "aa16b9821b62487b835175533242809"; // Your API key
+const WEATHER_API_KEY = "aa16b9821b62487b835175533242809"; // API key
 
 const app = document.querySelector(".weather-app");
 const temp = document.querySelector(".temp");
@@ -86,7 +86,7 @@ function fetchWeatherData() {
 
       cloudOutput.innerHTML = data.current.cloud + "%";
       humidityOutput.innerHTML = data.current.humidity + "%";
-      windOutput.innerHTML = data.current.wind_kph + " km/h";
+      windOutput.innerHTML = data.current.wind_mph + " mp/h";
 
       // Setting background images based on weather condition
       if (conditionCode === 1000) {

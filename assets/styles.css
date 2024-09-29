@@ -1,0 +1,309 @@
+/* CSS REST */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin-block-end: 0;
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+    line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+    min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+    scroll-margin-block: 5ex;
+}
+
+/* CSS REST END */
+
+
+:root {
+    /* Colors: */
+    --color-yellow: #FFC567;
+    --color-red: #FD5A46;
+    --color-black-mid: #182335;
+    --color-blue: #3A5A84;
+    --color-text: #F8F3EF;
+
+    /* Sizes */
+    --fs-h1: 54px;
+    --fs-h2: 30px;
+    --fs-h3: 23px;
+    --fs-h4: 18px;
+    --fs-p: 16px;
+    --fs-a: 12px;
+    /* Weight */
+    --fw-4: 400;
+    --fw-6: 600;
+    /* Font Families */
+    --ff-primary: "Notable", system-ui;
+    --ff-secondary: "Sofia", system-ui;
+
+}
+
+.weather-app {
+    min-height: 100vh;
+    background-image: url(/assets/images/day/clear.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: 500ms;
+    opacity: 1;
+    color: var(--color-text);
+
+}
+
+h1 {
+    font-family: var(--ff-primary);
+}
+
+.weather-app::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px 10px;
+
+}
+
+.weather-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 100px;
+    font-family: var(--ff-secondary);
+}
+
+.wether-info,
+.temp {
+    font-size: var(--fs-h3);
+}
+
+.city-time,
+.temp,
+.weather {
+    margin: 0 10px;
+}
+
+.city-time h3 {
+    margin: 0;
+    margin-bottom: 2px;
+    font-size: var(--fs-h3);
+}
+
+
+.weather image {
+    display: block;
+    margin: 1px 1px;
+}
+
+.panel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 60px;
+    right: 0;
+    background: rgba(110, 110, 110, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    z-index: 1;
+    padding: 3px 2px;
+    overflow-y: scroll;
+    font-family: var(--ff-secondary);
+}
+
+.panel form {
+    margin-bottom: 3px;
+    padding: 0px 0px 0px 10px;
+}
+
+.submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.5em;
+    margin: 0;
+    border: none;
+    background: var(--color-yellow);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.submit:hover {
+    background: var(--color-yellow) !important;
+    color: var(--color-black-mid);
+}
+
+.search {
+    background: none;
+    border: none;
+    border-bottom: 1px #ccc solid;
+    padding: 30px 10px 10px 0;
+    width: 80%;
+    color: var(--color-text);
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-6);
+}
+
+.search:focus {
+    outline: none;
+}
+
+.search::placeholder {
+    color: var(--color-text);
+}
+
+.panel ul {
+    padding: 10px 10px 1px 10px;
+    margin: 2px 0;
+    border-bottom: 1px #ccc solid;
+}
+
+.panel ul li {
+    color: var(--color-yellow);
+    margin: 20px 0;
+}
+
+.panel ul h4 {
+    margin: 20px 0;
+}
+
+.city {
+    display: block;
+    cursor: pointer;
+}
+
+.city:hover {
+    color: #fff;
+}
+
+.details li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        height: 100%;
+        padding: 60px 60px 4px 60px;
+
+    }
+
+    .weather-app {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .panel {
+        position: absolute;
+        width: 40%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        right: 0;
+    }
+
+
+}

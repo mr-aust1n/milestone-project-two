@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Notable&family=Sofia&display=swap" rel="stylesheet">
     <title>Retro Weather</title>
 </head>
 
@@ -12,50 +18,55 @@
 
     <div class="weather-app">
         <div class="container">
-            <div class="brand">The Weather</div>
-        </div>
-        <h1 class="temp">16</h1>
-        <div class="cityTime">
-            <h2 class="name">London</h2>
-            <span class="time">06:09</span>
-            <span class="date">Monday Sept 01</span>
-            <div class="weather">
-                <img class="icon" src="assets/images/sunny.png" alt="Sunny Weather Icon" width="50" height="50" />
-                <span class="conditions">Cloudy</span>
+            <h1>Retro Weather</h1>
+
+            <div class="weather-info">
+                <h2 class="temp">16</h2>
+                <div class="city-time">
+                    <h3 class="name">London</h3>
+                    <span class="time">06:09</span>
+                    <span class="date">Monday Sept 01</span>
+                </div>
+                <div class="weather">
+                    <img class="icon" src="assets/images/sunny.png" alt="Sunny Weather Icon" width="50" height="50" />
+                    <span class="conditions">Cloudy</span>
+                </div>
             </div>
         </div>
+
+
+        <div class="panel">
+            <form id="locationInput">
+                <input type="text" class="search" placeholder="Search Location" />
+                <button type="submit" class="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+
+
+            <ul class="cities">
+                <li class="city">Japan</li>
+                <li class="city">UK</li>
+                <li class="city">New York</li>
+            </ul>
+
+            <ul class="details">
+                <h4 class="weather-details">Weather Details</h4>
+                <li>
+                    <span>Cloudy</span>
+                    <span class="cloud">89%</span>
+                </li>
+                <li>
+                    <span>Humidity</span>
+                    <span class="humidity">74%</span>
+                </li>
+                <li>
+                    <span>Wind</span>
+                    <span class="wind">3mph</span>
+                </li>
+            </ul>
+        </div>
     </div>
-
-    <div class="panel">
-        <form id="locationInput">
-            <input type="text" class="search" placeholder="Search Location" />
-            <button type="submit" class="submit">
-                <i class="fa fa-search"></i>
-            </button>
-        </form>
-    </div>
-
-    <ul class="cities">
-        <li class="city">United Kingdom</li>
-        <li class="city">Ireland</li>
-        <li class="city">New York</li>
-    </ul>
-
-    <ul class="details">
-        <h3 class="weather-details">Weather Details</h3>
-        <li>
-            <span>Cloudy</span>
-            <span class="cloud">89%</span>
-        </li>
-        <li>
-            <span>Humidity</span>
-            <span class="humidity">74%</span>
-        </li>
-        <li>
-            <span>Wind</span>
-            <span class="wind">3mph</span>
-        </li>
-    </ul>
 
     <!-- JavaScript file -->
     <script src="assets/javascript.js"></script>
