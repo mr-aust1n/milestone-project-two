@@ -95,13 +95,10 @@ textarea:not([rows]) {
 /* CSS REST END */
 
 :root {
-    /* font-family: "Notable", sans-serif; */
-    /* font-family: "Sofia", cursive; */
     font-weight: 400;
     font-style: normal;
     color: aliceblue;
 }
-
 
 .weather-app {
     min-height: 100vh;
@@ -112,11 +109,9 @@ textarea:not([rows]) {
     position: relative;
     transition: 500ms;
     opacity: 1;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
 }
 
 .weather-app::before {
@@ -155,14 +150,12 @@ textarea:not([rows]) {
 .city-time,
 .temp,
 .weather {
-    margin: 0 10px
+    margin: 0 10px;
 }
 
 .city-time h1 {
     margin: 0;
     margin-bottom: 2px;
-    margin: 0;
-
 }
 
 .weather image {
@@ -186,6 +179,13 @@ textarea:not([rows]) {
     overflow-y: scroll;
 }
 
+.panel,
+.container {
+    position: relative;
+    width: 100%;
+    top: initial;
+}
+
 .panel form {
     margin-bottom: 3px;
 }
@@ -205,7 +205,6 @@ textarea:not([rows]) {
 .submit:hover {
     background: #fff;
     color: #000;
-
 }
 
 .search {
@@ -229,7 +228,6 @@ textarea:not([rows]) {
     padding: 0 0 1px 0;
     margin: 2px 0;
     border-bottom: 1px #ccc solid;
-
 }
 
 .panel ul li {
@@ -256,19 +254,14 @@ textarea:not([rows]) {
     align-items: center;
 }
 
-@media screen and (max-width: 768px) {
-
-    .panel,
-    .container {
-        position: relative;
-        width: 100%;
-        top: initial
-    }
-}
-
 @media screen and (min-width: 768px) {
 
-    /* .weather-app {
-        min-height: 800px;
-    } */
+    .panel {
+        position: absolute;
+        width: 40%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        right: 0;
+    }
 }
