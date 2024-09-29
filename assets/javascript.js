@@ -1,4 +1,4 @@
-const WEATHER_API_KEY = "aa16b9821b62487b835175533242809"; // Your API key
+const WEATHER_API_KEY = "aa16b9821b62487b835175533242809"; // API key
 
 const app = document.querySelector(".weather-app");
 const temp = document.querySelector(".temp");
