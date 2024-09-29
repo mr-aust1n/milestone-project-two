@@ -108,4 +108,46 @@ body {
 .weather-app {
     min-height: 100vh;
     background-image: url(/assets/images/day/clear.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: 500ms;
+    opacity: 1;
+}
+
+.weather-app::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2px, 3px, 4px, 3px;
+}
+
+.container>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.city-time,
+.temp,
+.weather {
+    margin: 0 1px
 }
