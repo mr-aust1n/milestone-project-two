@@ -92,3 +92,20 @@ textarea:not([rows]) {
 }
 
 /* CSS REST END */
+
+:root {
+    /* font-family: "Notable", sans-serif; */
+    /* font-family: "Sofia", cursive; */
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+}
+
+body {
+    /* background: #111; */
+}
+
+.weather-app {
+    min-height: 100vh;
+    background-image: url(/assets/images/day/clear.jpg);
+}
