@@ -151,3 +151,101 @@ body {
 .weather {
     margin: 0 1px
 }
+
+.city-time h1 {
+    margin: 0;
+    margin-bottom: 2px;
+    margin: 0;
+
+}
+
+.weather image {
+    display: block;
+    margin: 1px 1px;
+}
+
+.panel {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: rgba(110, 110, 110, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    z-index: 1;
+    padding: 3px 2px;
+    overflow-y: scroll;
+}
+
+.panel form {
+    margin-bottom: 3px;
+}
+
+.submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.5em;
+    margin: 0;
+    border: none;
+    background: #fa6d1b;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.submit:hover {
+    background: #fff;
+    color: #000;
+
+}
+
+.search {
+    background: none;
+    border: none;
+    border-bottom: 1px #ccc solid;
+    padding: 50px 1px 1px 0;
+    width: 80%;
+    color: #fff;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.search::placeholder {
+    color: #ccc;
+}
+
+.panel ul {
+    padding: 0 0 1px 0;
+    margin: 2px 0;
+    border-bottom: 1px #ccc solid;
+
+}
+
+.panel ul li {
+    color: #ccc;
+    margin: 20px 0;
+}
+
+.panel ul h4 {
+    margin: 20px 0;
+}
+
+.city {
+    display: block;
+    cursor: pointer;
+}
+
+.city:hover {
+    color: #fff;
+}
+
+.details li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
