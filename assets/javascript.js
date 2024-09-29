@@ -86,7 +86,7 @@ function fetchWeatherData() {
 
       cloudOutput.innerHTML = data.current.cloud + "%";
       humidityOutput.innerHTML = data.current.humidity + "%";
-      windOutput.innerHTML = data.current.wind_kph + " km/h";
+      windOutput.innerHTML = data.current.wind_mph + " mp/h";
 
       // Setting background images based on weather condition
       if (conditionCode === 1000) {
