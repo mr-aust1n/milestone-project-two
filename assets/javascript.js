@@ -90,7 +90,7 @@ function fetchWeatherData() {
 
       // Setting background images based on weather condition
       if (conditionCode === 1000) {
-        app.style.backgroundImage = `url(assets/images/${timeOfDay}/clear.jpg)`;
+        app.style.backgroundImage = `url(assets/images/${timeOfDay}/clear.png)`;
         btn.style.background = timeOfDay === "night" ? "#181e27" : "#e5ba92";
       } else if (
         conditionCode === 1003 ||
@@ -105,16 +105,16 @@ function fetchWeatherData() {
         conditionCode === 1279 ||
         conditionCode === 1282
       ) {
-        app.style.backgroundImage = `url(assets/images/${timeOfDay}/cloudy.jpg)`;
+        app.style.backgroundImage = `url(assets/images/${timeOfDay}/cloudy.png)`;
         btn.style.background = timeOfDay === "night" ? "#181e27" : "#fa6d1b";
       } else if (
         (conditionCode >= 1063 && conditionCode <= 1207) ||
         (conditionCode >= 1240 && conditionCode <= 1252)
       ) {
-        app.style.backgroundImage = `url(assets/images/${timeOfDay}/rainy.jpg)`;
+        app.style.backgroundImage = `url(assets/images/${timeOfDay}/rainy.png)`;
         btn.style.background = timeOfDay === "night" ? "#325c80" : "#647d75";
       } else {
-        app.style.backgroundImage = `url(assets/images/${timeOfDay}/snow.jpg)`;
+        app.style.backgroundImage = `url(assets/images/${timeOfDay}/snow.png)`;
         btn.style.background = timeOfDay === "night" ? "#1b1b1b" : "#4d72aa";
       }
 
