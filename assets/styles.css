@@ -230,6 +230,13 @@ h1 {
 .temp,
 .weather {
     margin: 0 10px;
+    font-size: 27px;
+}
+
+
+.temp {
+    margin: 0 10px;
+    font-size: 55px;
 }
 
 .weather {
