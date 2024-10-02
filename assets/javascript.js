@@ -22,7 +22,7 @@ cities.forEach((city) => {
   city.addEventListener("click", (e) => {
     cityInput = e.target.innerHTML;
     fetchWeatherData();
-    app.style.opacity = "0";
+    app.style.opacity = "0"; // Fade out for smooth transition
   });
 });
 
@@ -34,9 +34,9 @@ form.addEventListener("submit", (e) => {
     cityInput = search.value;
     fetchWeatherData();
     search.value = "";
-    app.style.opacity = "0";
+    app.style.opacity = "0"; // Fade out for smooth transition
   }
-  e.preventDefault();
+  e.preventDefault(); // Prevent form from submitting the traditional way
 });
 
 function dayOfTheWeek(day, month, year) {
@@ -75,58 +75,51 @@ function fetchWeatherData() {
 
       nameOutput.innerHTML = data.location.name;
 
-      // day or night
+      // Determine if it's day or night
       let timeOfDay = data.current.is_day ? "day" : "night";
 
-      // weather condition code
+      // Get the weather condition code
       const conditionCode = data.current.condition.code;
 
-      // Icons day/night folder
+      // Remove previous weather condition classes from the app
+      app.classList.remove("clear", "cloudy", "rainy", "snow");
+
+      // Add new classes based on condition code
+      if (conditionCode === 1000) {
+        app.classList.add(timeOfDay, "clear"); // Clear weather
+        btn.style.background = timeOfDay === "night" ? "#181e27" : "#e5ba92"; // Button color based on time of day
+      } else if (
+        conditionCode === 1003 ||
+        conditionCode === 1006 ||
+        conditionCode === 1009
+      ) {
+        app.classList.add(timeOfDay, "cloudy"); // Cloudy weather
+        btn.style.background = timeOfDay === "night" ? "#181e27" : "#fa6d1b"; // Button color for cloudy
+      } else if (conditionCode >= 1063 && conditionCode <= 1207) {
+        app.classList.add(timeOfDay, "rainy"); // Rainy weather
+        btn.style.background = timeOfDay === "night" ? "#325c80" : "#647d75"; // Button color for rainy
+      } else if (conditionCode >= 1210 && conditionCode <= 1225) {
+        app.classList.add(timeOfDay, "snow"); // Snowy weather
+        btn.style.background = timeOfDay === "night" ? "#1b1b1b" : "#4d72aa"; // Button color for snow
+      }
+
+      // Change weather icon based on the weather condition
       icon.src = `assets/icons/${timeOfDay}/${conditionCode}.svg`;
 
+      // Update other weather details
       cloudOutput.innerHTML = data.current.cloud + "%";
       humidityOutput.innerHTML = data.current.humidity + "%";
       windOutput.innerHTML = data.current.wind_mph + " mp/h";
 
-      // Setting background images based on weather condition
-      if (conditionCode === 1000) {
-        app.style.backgroundImage = `url(assets/images/${timeOfDay}/clear.png)`;
-        btn.style.background = timeOfDay === "night" ? "#181e27" : "#e5ba92";
-      } else if (
-        conditionCode === 1003 ||
-        conditionCode === 1006 ||
-        conditionCode === 1009 ||
-        conditionCode === 1030 ||
-        conditionCode === 1069 ||
-        conditionCode === 1087 ||
-        conditionCode === 1135 ||
-        conditionCode === 1273 ||
-        conditionCode === 1276 ||
-        conditionCode === 1279 ||
-        conditionCode === 1282
-      ) {
-        app.style.backgroundImage = `url(assets/images/${timeOfDay}/cloudy.png)`;
-        btn.style.background = timeOfDay === "night" ? "#181e27" : "#fa6d1b";
-      } else if (
-        (conditionCode >= 1063 && conditionCode <= 1207) ||
-        (conditionCode >= 1240 && conditionCode <= 1252)
-      ) {
-        app.style.backgroundImage = `url(assets/images/${timeOfDay}/rainy.png)`;
-        btn.style.background = timeOfDay === "night" ? "#325c80" : "#647d75";
-      } else {
-        app.style.backgroundImage = `url(assets/images/${timeOfDay}/snow.png)`;
-        btn.style.background = timeOfDay === "night" ? "#1b1b1b" : "#4d72aa";
-      }
-
-      app.style.opacity = "1";
+      app.style.opacity = "1"; // Fade in after data loads
     })
     .catch((error) => {
       console.error("Error:", error);
       alert("City Not Found, Please try again");
-      app.style.opacity = "1";
+      app.style.opacity = "1"; // Reset opacity if error occurs
     });
 }
 
 // Call the function for the default city on page load
 fetchWeatherData();
-app.style.opacity = "1";
+app.style.opacity = "1"; // Ensure app is visible after loading
