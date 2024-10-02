@@ -133,48 +133,48 @@ textarea:not([rows]) {
 
 
 .weather-app {
-    background-image: url(/assets/images/mobile/day/clear.png);
+    background-image: url(assets/images/mobile/day/clear.png);
     /* Mobile default */
 }
 
 /* Mobile day clear */
 .weather-app.day.clear {
-    background-image: url(/assets/images/mobile/day/clear.png);
+    background-image: url(assets/images/mobile/day/clear.png);
 }
 
 /* Mobile day cloudy */
 .weather-app.day.cloudy {
-    background-image: url(/assets/images/mobile/day/cloudy.png);
+    background-image: url(assets/images/mobile/day/cloudy.png);
 }
 
 /* Mobile day rainy */
 .weather-app.day.rainy {
-    background-image: url(/assets/images/mobile/day/rainy.png);
+    background-image: url(assets/images/mobile/day/rainy.png);
 }
 
 /* Mobile day snow */
 .weather-app.day.snow {
-    background-image: url(/assets/images/mobile/day/snow.png);
+    background-image: url(assets/images/mobile/day/snow.png);
 }
 
 /* Mobile night clear */
 .weather-app.night.clear {
-    background-image: url(/assets/images/mobile/night/clear.png);
+    background-image: url(assets/images/mobile/night/clear.png);
 }
 
 /* Mobile night cloudy */
 .weather-app.night.cloudy {
-    background-image: url(/assets/images/mobile/night/cloudy.png);
+    background-image: url(assets/images/mobile/night/cloudy.png);
 }
 
 /* Mobile night rainy */
 .weather-app.night.rainy {
-    background-image: url(/assets/images/mobile/night/rainy.png);
+    background-image: url(assets/images/mobile/night/rainy.png);
 }
 
 /* Mobile night snow */
 .weather-app.night.snow {
-    background-image: url(/assets/images/mobile/night/snow.png);
+    background-image: url(assets/images/mobile/night/snow.png);
 }
 
 h1 {
@@ -382,36 +382,36 @@ img.icon {
 
     /* Desktop day cloudy */
     .weather-app.day.cloudy {
-        background-image: url(/assets/images/desktop/day/cloudy.png);
+        background-image: url(assets/images/desktop/day/cloudy.png);
     }
 
     /* Desktop day rainy */
     .weather-app.day.rainy {
-        background-image: url(/assets/images/desktop/day/rainy.png);
+        background-image: url(assets/images/desktop/day/rainy.png);
     }
 
     /* Desktop day snow */
     .weather-app.day.snow {
-        background-image: url(/assets/images/desktop/day/snow.png);
+        background-image: url(assets/images/desktop/day/snow.png);
     }
 
     /* Desktop night clear */
     .weather-app.night.clear {
-        background-image: url(/assets/images/desktop/night/clear.png);
+        background-image: url(assets/images/desktop/night/clear.png);
     }
 
     /* Desktop night cloudy */
     .weather-app.night.cloudy {
-        background-image: url(/assets/images/desktop/night/cloudy.png);
+        background-image: url(assets/images/desktop/night/cloudy.png);
     }
 
     /* Desktop night rainy */
     .weather-app.night.rainy {
-        background-image: url(/assets/images/desktop/night/rainy.png);
+        background-image: url(assets/images/desktop/night/rainy.png);
     }
 
     /* Desktop night snow */
     .weather-app.night.snow {
-        background-image: url(/assets/images/desktop/night/snow.png);
+        background-image: url(assets/images/desktop/night/snow.png);
     }
 }
