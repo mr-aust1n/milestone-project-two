@@ -179,6 +179,7 @@ textarea:not([rows]) {
 
 h1 {
     font-family: var(--ff-primary);
+    font-size: 25px;
     letter-spacing: 2px;
 }
 
@@ -344,6 +345,10 @@ img.icon {
 }
 
 @media screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 55px;
+    }
 
     .container {
         height: 100%;
