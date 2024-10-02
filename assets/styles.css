@@ -115,13 +115,12 @@ textarea:not([rows]) {
     --fw-6: 600;
     /* Font Families */
     --ff-primary: "Notable", system-ui;
-    --ff-secondary: "Sofia", system-ui;
+    --ff-secondary: "Jost", sans-serif;
 
 }
 
 .weather-app {
     min-height: 100vh;
-    background-image: url(/assets/images/day/clear.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -132,8 +131,55 @@ textarea:not([rows]) {
 
 }
 
+
+.weather-app {
+    background-image: url(/assets/images/mobile/day/clear.png);
+    /* Mobile default */
+}
+
+/* Mobile day clear */
+.weather-app.day.clear {
+    background-image: url(/assets/images/mobile/day/clear.png);
+}
+
+/* Mobile day cloudy */
+.weather-app.day.cloudy {
+    background-image: url(/assets/images/mobile/day/cloudy.png);
+}
+
+/* Mobile day rainy */
+.weather-app.day.rainy {
+    background-image: url(/assets/images/mobile/day/rainy.png);
+}
+
+/* Mobile day snow */
+.weather-app.day.snow {
+    background-image: url(/assets/images/mobile/day/snow.png);
+}
+
+/* Mobile night clear */
+.weather-app.night.clear {
+    background-image: url(/assets/images/mobile/night/clear.png);
+}
+
+/* Mobile night cloudy */
+.weather-app.night.cloudy {
+    background-image: url(/assets/images/mobile/night/cloudy.png);
+}
+
+/* Mobile night rainy */
+.weather-app.night.rainy {
+    background-image: url(/assets/images/mobile/night/rainy.png);
+}
+
+/* Mobile night snow */
+.weather-app.night.snow {
+    background-image: url(/assets/images/mobile/night/snow.png);
+}
+
 h1 {
     font-family: var(--ff-primary);
+    letter-spacing: 2px;
 }
 
 .weather-app::before {
@@ -171,15 +217,30 @@ h1 {
     font-family: var(--ff-secondary);
 }
 
+
 .wether-info,
 .temp {
     font-size: var(--fs-h3);
+
 }
+
 
 .city-time,
 .temp,
 .weather {
     margin: 0 10px;
+}
+
+.weather {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img.icon {
+    width: 70px;
+    height: 70px;
 }
 
 .city-time h3 {
@@ -305,5 +366,52 @@ h1 {
         right: 0;
     }
 
+    img.icon {
+        width: 200px;
+        height: 200px;
+    }
 
+
+
+
+
+    /* Desktop day clear */
+    .weather-app.day.clear {
+        background-image: url(assets/images/desktop/day/clear.png);
+    }
+
+    /* Desktop day cloudy */
+    .weather-app.day.cloudy {
+        background-image: url(/assets/images/desktop/day/cloudy.png);
+    }
+
+    /* Desktop day rainy */
+    .weather-app.day.rainy {
+        background-image: url(/assets/images/desktop/day/rainy.png);
+    }
+
+    /* Desktop day snow */
+    .weather-app.day.snow {
+        background-image: url(/assets/images/desktop/day/snow.png);
+    }
+
+    /* Desktop night clear */
+    .weather-app.night.clear {
+        background-image: url(/assets/images/desktop/night/clear.png);
+    }
+
+    /* Desktop night cloudy */
+    .weather-app.night.cloudy {
+        background-image: url(/assets/images/desktop/night/cloudy.png);
+    }
+
+    /* Desktop night rainy */
+    .weather-app.night.rainy {
+        background-image: url(/assets/images/desktop/night/rainy.png);
+    }
+
+    /* Desktop night snow */
+    .weather-app.night.snow {
+        background-image: url(/assets/images/desktop/night/snow.png);
+    }
 }
