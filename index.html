@@ -15,12 +15,14 @@
 </head>
 
 <body>
+    <header>
+        <h1>Retro Weather</h1>
+    </header>
 
-    <div class="weather-app">
-        <div class="container">
-            <h1>Retro Weather</h1>
+    <main class="weather-app">
+        <section class="container">
 
-            <div class="weather-info">
+            <article class="weather-info">
                 <h2 class="temp">16</h2>
                 <div class="city-time">
                     <h3 class="name">London</h3>
@@ -31,11 +33,11 @@
                     <img class="icon" src="assets/images/sunny.png" alt="Sunny Weather Icon" />
                     <span class="conditions">Cloudy</span>
                 </div>
-            </div>
-        </div>
+            </article>
+        </section>
 
 
-        <div class="panel">
+        <aside class="panel">
             <form id="locationInput">
                 <input type="text" class="search" placeholder="Search Location" />
                 <button type="submit" class="submit">
@@ -43,30 +45,31 @@
                 </button>
             </form>
 
+            <nav>
+                <ul class="cities">
+                    <li class="city">Japan</li>
+                    <li class="city">UK</li>
+                    <li class="city">New York</li>
+                </ul>
 
-            <ul class="cities">
-                <li class="city">Japan</li>
-                <li class="city">UK</li>
-                <li class="city">New York</li>
-            </ul>
-
-            <ul class="details">
-                <h4 class="weather-details">Weather Details</h4>
-                <li>
-                    <span>Cloudy</span>
-                    <span class="cloud">89%</span>
-                </li>
-                <li>
-                    <span>Humidity</span>
-                    <span class="humidity">74%</span>
-                </li>
-                <li>
-                    <span>Wind</span>
-                    <span class="wind">3mph</span>
-                </li>
-            </ul>
-        </div>
-    </div>
+                <ul class="details">
+                    <h4 class="weather-details">Weather Details</h4>
+                    <li>
+                        <span>Cloudy</span>
+                        <span class="cloud">89%</span>
+                    </li>
+                    <li>
+                        <span>Humidity</span>
+                        <span class="humidity">74%</span>
+                    </li>
+                    <li>
+                        <span>Wind</span>
+                        <span class="wind">3mph</span>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+    </main>
 
     <!-- JavaScript file -->
     <script src="assets/javascript.js"></script>
