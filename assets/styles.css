@@ -214,7 +214,7 @@ h1 {
     align-items: center;
     flex-direction: row;
     gap: 10px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
     font-family: var(--ff-secondary);
 }
 
@@ -256,6 +256,8 @@ img.icon {
     margin-bottom: 2px;
     font-size: var(--fs-h3);
 }
+
+
 
 
 .weather image {
