@@ -177,6 +177,11 @@ textarea:not([rows]) {
     background-image: url(https://mr-aust1n.github.io/milestone-project-two/assets/images/mobile/night/snowy.png);
 }
 
+header h1 {
+    background-color: transparent;
+    padding: 10px;
+}
+
 h1 {
     font-family: var(--ff-primary);
     font-size: 25px;
