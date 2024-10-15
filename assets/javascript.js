@@ -87,7 +87,7 @@ function fetchWeatherData() {
       // Add new classes based on condition code
       if (conditionCode === 1000) {
         app.classList.add(timeOfDay, "clear"); // Clear weather
-        btn.style.background = timeOfDay === "night" ? "#181e27" : "#e5ba92"; // Button color based on time of day
+        btn.style.background = timeOfDay === "night" ? "#B1B2BB" : "#e5ba92"; // Button color based on time of day
       } else if (
         conditionCode === 1003 ||
         conditionCode === 1006 ||
