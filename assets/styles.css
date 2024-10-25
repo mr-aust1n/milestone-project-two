@@ -218,7 +218,7 @@ h1 {
     align-items: center;
     flex-direction: row;
     gap: 10px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
     font-family: var(--ff-secondary);
 }
 
@@ -429,112 +429,4 @@ img.icon {
     .weather-app.night.snow {
         background-image: url(https://mr-aust1n.github.io/milestone-project-two/assets/images/desktop/night/snowy.png);
     }
-}
-
-
-body {
-    background-color: #f4ecd8;
-    font-family: 'Press Start 2P', cursive;
-    /* Retro pixel font */
-    color: #3e2723;
-}
-
-.weather-app {
-    background-color: #a67742;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-    max-width: 400px;
-    margin: 50px auto;
-    text-align: center;
-}
-
-.temp {
-    font-size: 48px;
-    font-weight: bold;
-    color: #ffcc00;
-}
-
-.conditions,
-.date,
-.time,
-.name {
-    font-size: 18px;
-    color: #ffd700;
-    margin: 5px 0;
-}
-
-.icon {
-    width: 100px;
-    height: 100px;
-    margin: 20px auto;
-}
-
-.cloud,
-.humidity,
-.wind {
-    font-size: 16px;
-    color: #f4ecd8;
-}
-
-.city {
-    display: inline-block;
-    background-color: #ff5722;
-    color: white;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.city:hover {
-    background-color: #ff7043;
-}
-
-.submit {
-    background-color: #ff5722;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.submit:hover {
-    background-color: #ff7043;
-}
-
-/* Retro button effects */
-button,
-.submit {
-    box-shadow: 0px 4px 0px #d32f2f;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 14px;
-    padding: 10px 20px;
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
-}
-
-button:active,
-.submit:active {
-    box-shadow: 0px 2px 0px #d32f2f;
-    transform: translateY(2px);
-}
-
-.city:active {
-    background-color: #ff3d00;
-    transform: scale(0.98);
-}
-
-/* Retro text style */
-.date,
-.time,
-.conditions {
-    text-shadow: 2px 2px 0 #000000;
-}
-
-/* Retro weather icons */
-.icon {
-    filter: sepia(1) hue-rotate(200deg) contrast(1.2);
 }
