@@ -1,0 +1,62 @@
+/* 404 Page TOP */
+:root {
+    /* Font Families */
+    --ff-primary: "Notable", system-ui;
+    --ff-secondary: "Jost", sans-serif;
+
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EE90C2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: var(--ff-primary);
+    color: white;
+    text-align: center;
+}
+
+.container_404 {
+    max-width: 600px;
+    padding-top: 133px;
+}
+
+.container_404 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container_404 h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+.container_404 p {
+    font-size: 1.2rem;
+}
+
+.container_404 a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #EE90C2;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.container_404 a:hover {
+    background-color: #ffb8d2;
+}
+
+.container_404 img {
+    width: 55%;
+
+}
+
+/* 404 Page Bottom */
