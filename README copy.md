@@ -14,7 +14,7 @@
 
 ### 1. Design, Develop, and Implement
 
-This project demonstrates a fully interactive front-end web application using HTML, CSS, Javascipt and a weather API. It incorporates user-centric design principles, simple navigation, and responsive elements including alternative backgrounds for mobile devices and weather conditions.
+This project demonstrates a fully interactive front-end web application using HTML, CSS, JavaScript and a weather API. It incorporates user-centric design principles, simple navigation, and responsive elements including alternative backgrounds for mobile devices and weather conditions.
 
 - **Retro Weather** displays a background image that represents the current weather.
 - **Retro Weather** is especially handy for those who travel and want to know the immediate weather at their destination.
