@@ -1,12 +1,15 @@
 {
   "name": "milestone-project-two",
   "version": "1.0.0",
-  "description": "",
+  "description": "External Links [Repo] https://github.com/mr-aust1n/milestone-project-two/actions",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
