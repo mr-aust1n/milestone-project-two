@@ -123,6 +123,3 @@ function fetchWeatherData() {
 // Call the function for the default city on page load
 fetchWeatherData();
 app.style.opacity = "1"; // Ensure app is visible after loading
-
-//The refreshers the image as button images were not correct on Chrome
-icon.src = `assets/icons/${timeOfDay}/${conditionCode}.svg?timestamp=${new Date().getTime()}`;
