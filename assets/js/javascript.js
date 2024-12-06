@@ -126,4 +126,9 @@ app.style.opacity = "1"; // Ensure app is visible after loading
 
 //The refreshers the image as button images were not correct on Chrome
 
-icon.src = `assets/icons/${timeOfDay}/${conditionCode}.svg?timestamp=${new Date().getTime()}`;
+cities.forEach((city) => {
+  city.addEventListener("click", (e) => {
+    cityInput = e.target.innerHTML.trim();
+    window.location.href = `?city=${cityInput}`; // Pass city as a query parameter
+  });
+});
