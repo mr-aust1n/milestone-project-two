@@ -135,6 +135,7 @@ project/
 ├── assets/
 │ ├── css/
 │ │ └── styles.css
+│ │ └── styles_404.css
 │ ├── images/
 │ │ │
 │ │ ├──sunny.png
@@ -163,12 +164,13 @@ project/
 │ │ │ │ └── snowy.png
 │ ├── js/
 │ │ └── javascript.js
+│ │ └── 404.js
 │
 ├── index.html
 
 <em>M(iv) Write code such that users who direct to a nonexistent page or resource are redirected back to the main page without having to use browser navigation buttons.</em>
 
-- a
+- I have created a custom 404.html page and within GitHub Pages, it directs users to this page when they navigate to nonexistent. To improve usability, I added a 'Back to Home' button that allows users to return to the main page (index.html). Additionally, the page features a countdown timer starting at 10 seconds, which automatically redirects users to index.html when it reaches 0, ensuring a seamless experience without requiring any manual input.
 
 ### 3. Testing the Application
 
