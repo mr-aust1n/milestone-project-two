@@ -20,7 +20,7 @@
         <h1>Retro Weather</h1>
     </header>
 
-    <main class="weather-app">
+    <main class="weather-app" role="main">
         <section class="container">
 
             <article class="weather-info">
@@ -38,36 +38,34 @@
         </section>
 
 
-        <aside class="panel">
+        <aside class="panel" role="complementary">
             <form id="locationInput">
-                <input type="text" class="search" placeholder="Search Location" />
-                <button type="submit" class="submit">
-                    <i class="fa fa-search"></i>
+                <label for="searchLocation" class="sr-only">Search for a location</label>
+                <input type="text" id="searchLocation" class="search" placeholder="Search Location" />
+                <button type="submit" title="Search" name="searchButton" class="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <span class="sr-only">Search</span>
                 </button>
             </form>
 
-            <nav>
+
+            <nav aria-label="Weather Navigation">
                 <ul class="cities">
-                    <li class="city">Amsterdam</li>
-                    <li class="city">UK</li>
-                    <li class="city">New York</li>
+                    <li class="city" name="Amsterdam">Amsterdam</li>
+                    <li class="city" name="UK">UK</li>
+                    <li class="city" name="New York">New York</li>
                 </ul>
 
-                <ul class="details">
-                    <h4 class="weather-details">Weather Details</h4>
-                    <li>
-                        <span>Cloudy</span>
-                        <span class="cloud">89%</span>
-                    </li>
-                    <li>
-                        <span>Humidity</span>
-                        <span class="humidity">74%</span>
-                    </li>
-                    <li>
-                        <span>Wind</span>
-                        <span class="wind">3mph</span>
-                    </li>
-                </ul>
+                <h4 class="weather-details">Weather Details</h4>
+                <dl class="details">
+                    <dt>Cloudy</dt>
+                    <dd class="cloud">89%</dd>
+                    <dt>Humidity</dt>
+                    <dd class="humidity">74%</dd>
+                    <dt>Wind</dt>
+                    <dd class="wind">3mph</dd>
+                </dl>
+
             </nav>
         </aside>
     </main>

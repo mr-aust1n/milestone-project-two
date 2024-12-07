@@ -348,10 +348,37 @@ img.icon {
     color: #fff;
 }
 
-.details li {
+
+.weather-details {
+    padding: 22px 5px;
+}
+
+.details {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 5px;
+
+}
+
+.details dt {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--color-yellow);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 0px 10px 0px;
+}
+
+
+.details dd {
+    margin: 0 0 15px 20px;
+}
+
+.details .cloud,
+.details .humidity,
+.details .wind {
+    font-size: 1rem;
 }
 
 @media screen and (min-width: 768px) {
