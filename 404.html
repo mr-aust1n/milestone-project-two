@@ -7,24 +7,21 @@
     <title>404 - Page Not Found</title>
     <link rel="stylesheet" href="assets/css/styles_404.css">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-
 </head>
 
-
-
 <body>
-
-
-    <div class="container_404">
-        <img src="assets/images/404/404.png" alt="404 Error" />
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <main id="main-content" class="container_404" role="main">
+        <img src="assets/images/404/404.png" alt="404 Error: Page Not Found" />
         <h1>404 - Page Not Found</h1>
         <p>Sorry, the page you are looking for doesn't exist.</p>
-        <a href="index.html">Go Back to Home</a>
-        <p>You will be redirected in <time><strong id="seconds">10</strong> seconds</time>.</p>
-    </div>
-
+        <a href="index.html" aria-label="Return to the homepage">Go Back to Home</a>
+        <p>
+            You will be redirected in
+            <time datetime="PT10S"><strong id="seconds">10</strong> seconds</time>.
+        </p>
+    </main>
+    <script src="assets/js/404.js"></script>
 </body>
-<!-- JavaScript file -->
-<script src="assets/js/404.js"></script>
 
 </html>
