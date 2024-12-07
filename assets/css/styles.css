@@ -212,16 +212,24 @@ h1 {
     padding: 10px 10px;
 }
 
+
 .weather-info {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     gap: 10px;
-    padding-bottom: 100px;
+    margin-bottom: 310px;
     font-family: var(--ff-secondary);
+    border-radius: 20px;
+    right: 0;
+    background: rgba(110, 110, 110, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    z-index: 1;
 }
-
 
 .wether-info,
 .temp {
@@ -357,17 +365,16 @@ img.icon {
     list-style: none;
     margin: 0;
     padding: 0 0 0 5px;
+    display: flex;
+    gap: 22px;
 
 }
 
 .details dt {
+
     font-weight: bold;
     margin-bottom: 5px;
     color: var(--color-yellow);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0px 10px 0px;
 }
 
 
@@ -379,6 +386,11 @@ img.icon {
 .details .humidity,
 .details .wind {
     font-size: 1rem;
+}
+
+ul.cities {
+    display: flex;
+    gap: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -399,6 +411,12 @@ img.icon {
         justify-content: flex-end;
     }
 
+    .details dt {
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0px 10px 0px;
+    }
+
     .panel {
         position: absolute;
         width: 40%;
@@ -409,11 +427,23 @@ img.icon {
     }
 
     img.icon {
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
     }
 
+    ul.cities {
+        gap: 10px;
+        flex-direction: column;
+    }
 
+    .weather-info {
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 10px;
+        margin-bottom: 100px;
+
+    }
 
 
 
