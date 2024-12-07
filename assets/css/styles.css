@@ -446,7 +446,7 @@ ul.cities {
         align-items: center;
         flex-direction: row;
         gap: 10px;
-        margin-bottom: 100px;
+        margin-bottom: 180px;
         max-width: 600px;
     }
 
@@ -512,8 +512,8 @@ ul.cities {
 
     .weather-info {
         max-width: 700px;
+        margin-bottom: 100px;
     }
-
 }
 
 
