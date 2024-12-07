@@ -219,7 +219,7 @@ h1 {
     align-items: center;
     flex-direction: row;
     gap: 10px;
-    margin-bottom: 310px;
+    margin-bottom: 220px;
     font-family: var(--ff-secondary);
     border-radius: 20px;
     right: 0;
@@ -228,21 +228,24 @@ h1 {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.18);
-    z-index: 1;
+    z-index: 999;
 }
 
 .wether-info,
 .temp {
     font-size: var(--fs-h3);
-
 }
 
+.weather-info {
+    width: 100%;
+    padding: 22px;
+}
 
 .city-time,
 .temp,
 .weather {
     margin: 0 10px;
-    font-size: 27px;
+    font-size: 17px;
 }
 
 
@@ -393,6 +396,8 @@ ul.cities {
     gap: 60px;
 }
 
+
+
 @media screen and (min-width: 768px) {
 
     h1 {
@@ -448,6 +453,11 @@ ul.cities {
         margin: 10px 0 0px 0px;
     }
 
+    .city-time,
+    .temp,
+    .weather {
+        font-size: 27px;
+    }
 
 
     /* Desktop day clear */
