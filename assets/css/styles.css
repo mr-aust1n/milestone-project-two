@@ -442,7 +442,10 @@ ul.cities {
         flex-direction: row;
         gap: 10px;
         margin-bottom: 100px;
+    }
 
+    .details dd {
+        margin: 10px 0 0px 0px;
     }
 
 
