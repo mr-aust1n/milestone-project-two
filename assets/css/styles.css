@@ -457,7 +457,7 @@ ul.cities {
     .city-time,
     .temp,
     .weather {
-        font-size: 27px;
+        font-size: 20px;
     }
 
 
@@ -500,6 +500,20 @@ ul.cities {
     .weather-app.night.snow {
         background-image: url(https://mr-aust1n.github.io/milestone-project-two/assets/images/desktop/night/snowy.png);
     }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .city-time,
+    .temp,
+    .weather {
+        font-size: 25px;
+    }
+
+    .weather-info {
+        max-width: 700px;
+    }
+
 }
 
 
