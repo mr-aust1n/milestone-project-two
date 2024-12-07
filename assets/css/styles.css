@@ -447,6 +447,7 @@ ul.cities {
         flex-direction: row;
         gap: 10px;
         margin-bottom: 100px;
+        max-width: 600px;
     }
 
     .details dd {
