@@ -1,14 +1,20 @@
 [2. Implement Front-end Interactivity](/README.md#2-implement-front-end-interactivity)
 
-When doing my project I used a number of websites that allowed me to check my web application for good accessibility and good UX principles.
+- When doing my project I used a number of tools that allowed me to check my web application for good accessibility and good UX principles.
 
-To check my colours worked with the altertating background images used within the app, I used a progrme called used https://wave.webaim.org
+- To check my colours worked with the alternating background images used within the app, I used a program called used [wave.webaim](https://wave.webaim.org/report#/https://mr-aust1n.github.io/milestone-project-two/?)
 
-https://wave.webaim.org
+- I used Lighthouse in Chrome DevTools to evaluate and improve the accessibility of my web app. I was not happy until I could get the in the green.
 
-RESPOSIVENESS (linked from redme 1.3)
+IMAGED NEEEDED
 
 <em>2.1 Write JavaScript code, that passes through a linter (e.g. JSLint) with no major issues and write validated HTML and CSS code.</em>
+
+- I initially attempted to validate my code using JSLint online but encountered numerous errors. With further investigation, I discovered that JSLint does not support ES6 syntax, whereas my code was written using modern ES6 standards. To address this, I installed ESLint via the terminal, which provided more robust support for ES6. During the linting process, ESLint flagged a single error and included a helpful link to the exact issue. Following the link, I identified and corrected the problem based on the suggestion provided. After making the necessary changes, I re-ran ESLint, and my code successfully passed validation.
+
+IMAGe gHRRE
+
+[Go Back to Readme](/README.md#2.1)
 
 ### 3. Testing the Application
 
@@ -58,14 +64,15 @@ RESPOSIVENESS (linked from redme 1.3)
 
 <em>3.1 Explain the principles of automated and manual testing and when each might be deployed. </em>
 
-- a
-  <em>3.2 Design and implement testing procedures (automated or manual) to assess functionality, usability and responsiveness of the web application. </em>
+- I used both automated and manual testing to ensure my project works smoothly. For automated testing, I used Jest to test functions like fetchWeatherData to verify that API responses are handled correctly and the DOM updates as expected. I also used ESLint to identify and fix potential issues in my code, ensuring it is clean and error-free. Manual testing was essential for checking edge cases, such as entering invalid or blank city names, rapidly clicking city buttons, and simulating slow or failed network conditions. Additionally, I used Lighthouse in Chrome DevTools to check accessibility and performance. By combining automated testing with manual testing, I ensured the application is functional, stable, and user-friendly.
 
-- a
+<em>3.2 Design and implement testing procedures (automated or manual) to assess functionality, usability and responsiveness of the web application. </em>
+
+- To test the functionality, usability, and responsiveness of my web application, I used both automated and manual testing. For functionality, I used Jest to test key functions like fetchWeatherData to ensure API responses update the DOM correctly. For usability, I manually tested scenarios such as entering invalid city names, clicking city buttons, and handling rapid interactions to confirm smooth performance. To check responsiveness, I used Chrome DevTools to simulate different screen sizes, ensuring the app looks and works well on mobile, tablet, and desktop devices. I also used ESLint to fix code issues and Lighthouse to assess accessibility and performance. This approach ensured the app is functional, user-friendly, and responsive.
 
 <em>3.3 Insert screenshots of the finished project that align to relevant user stories.</em>
 
-- a
+- IMAGES HERE
 
 <em>3.4 Apply test procedures during development and implementation stages and test to ensure the deployed version matches the development version. </em>
 
@@ -102,7 +109,7 @@ NEEDS PICTURES
   The test confirmed that the correct API URL is used and the expected data is returned.
 
 - Test 2B: Throws an error for invalid city input:
-  This test verifies that the function handles an invalid city names correclty by throwing an error when the API responds with a 404 (city not found).
+  This test verifies that the function handles an invalid city names correctly by throwing an error when the API responds with a 404 (city not found).
   Invalid city tested:
   "InvalidCity" → API responds with an error, and the function throws "API Error".
 
@@ -112,6 +119,39 @@ NEEDS PICTURES
     "Network Error" → Function correctly throws "Network Error" and avoids unexpected behavior.
 
     INSERT IMAGES
+
+re write this and leave in the images of ADD IMAGES HERE
+
+- Test 3 - City Button Event Listeners
+  The City Button Event Listeners functionality was tested with two separate tests to make sure the behavior worked as I had intended:
+
+- Test 3A - This test verifies that clicking on a city button updates the cityInput variable with the corresponding city name and triggers the fetchWeatherData function. It ensures the application correctly fetches and displays weather data for the selected city when the user interacts with the city buttons.
+
+- Test 3B - Resets application opacity after clicking a city button
+  This test confirms that after clicking a city button, the application's opacity is temporarily set to 0 for a smooth transition and then resets to 1 after the weather data is fetched. This behavior ensures the end user has a seamless user experience.
+
+By doing these tests together, these tests validate the functionality and visual consistency of the city button interactions, ensuring the correct data is fetched and displayed with smooth transitions for the end user.
+
+The error I occurred within my test was because the default test environment for Jest is node. Node does does not provide access to the document or other browser-like APIs. To fix this issue I had to configure Jest to use the jsdom test environment, which simulates a browser environment for tests. I added this this to my package.json file then installed the dependencies. This allowed all tests to pass.
+
+ADD IMAGES of failes
+
+FIX
+To Fix
+
+- Test 4 - Form Submission.
+
+The Form Submission functionality was tested with two tests to ensure the behavior is as I expected:
+
+- Test 4a - Handles valid input and triggers the fetchWeatherData.
+  This test ensures that when the user submits the form with a valid city name, the cityInput variable is updated accordingly, and the fetchWeatherData function is triggered. This validates that the application fetches and displays the correct weather data based on the user's input.
+
+- Test 4b: Handles empty input correctly
+  This test checks the application's ability to handle an empty form submission. It verifies that if the user submits the form without typing a city name, an alert is displayed prompting the user to enter a valid location. This is to ensure a robust user experience and to prevent unnecessary API calls.
+
+- Together, these tests confirm that the form submission logic functions as intended, both for valid and invalid user inputs, ensuring reliable and error-free behavior.
+
+NEEDS IMAGES
 
 <em>3.5 Fully document the results of well-planned testing procedures (automated or manual) to assess the website’s functionality, usability and responsiveness.</em>
 

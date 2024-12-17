@@ -28,7 +28,7 @@ cities.forEach((city) => {
 
 form.addEventListener("submit", (e) => {
   const search = document.querySelector(".search");
-  if (search.value.length == 0) {
+  if (search.value.length === 0) {
     alert("Please type in a city name");
   } else {
     cityInput = search.value;

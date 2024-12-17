@@ -1,12 +1,18 @@
 # Project Name: (Retro Weather)
 
 External Links
-[Repo] https://github.com/mr-aust1n/milestone-project-two/actions
+[Repo](https://github.com/mr-aust1n/milestone-project-two/actions)
 
-[GHPages] https://mr-aust1n.github.io/milestone-project-two/
+[GHPages](https://mr-aust1n.github.io/milestone-project-two/)
 
-Internal Links
+Internal Test Links
 [Test](/TEST.md)
+
+### Device Layout
+
+|                         Main pages                          |
+| :---------------------------------------------------------: |
+| ![screenshot](/doumentation/laptop-phone-tablet-mockup.png) |
 
 <summary>A summary of Retro Weather</summary>
 
@@ -27,45 +33,58 @@ This unit aims to provide learners with the knowledge and skills needed to build
 [4. Deployment to a Cloud Platform](#4-deployment-to-a-cloud-platform)
 [5. Version Control and Documentation](#5-version-control-and-documentation)
 [6. Credits and Dependencies](#6-Credits-and-Dependencies)
+[Testing](/TEST.md)
 
 ### 1. Design, Develop, and Implement
 
 <em>1.0 Design, develop and implement a dynamic Front end web application using HTML CSS and JavaScript.</em>
 
-- I designed my weather web application using Adobe XD, which allowed me to create wireframes for desktop, tablet, and mobile versions of the site.
+- I designed my weather web application using [Adobe XD](https://xd.adobe.com/view/481a767f-1f58-4463-994b-77439714df93-1d49/grid), which allowed me to create wireframes for desktop, tablet, and mobile versions of the site.
 
-Throughout the design process, I applied key principles of user experience design by focusing on a clear structure, and logical navigation buttons and a simple search section. I also incorporated accessibility considerations, such as ensuring sufficient colour contrast, using clear and legible typography, and designing intuitive layouts to support a diverse range of users that may use this site at various times of the day (Eg night colours and day colours)
+- Throughout the design process, I applied key principles of user experience design by focusing on a clear structure, and logical navigation buttons and a simple search section. I also incorporated accessibility considerations, such as ensuring sufficient colour contrast, using clear and legible typography, and designing intuitive layouts to support a diverse range of users that may use this site at various times of the day (E.g. night colours and day colours)
 
-This approach enabled me to create a web application that is responsive, accessible, and designed to supply the correct data to the end user.
+- This approach enabled me to create a web application that is responsive, accessible, and designed to supply the correct data to the end user.
 
-Below are two mockup images of the Yap Marketing website created using the adobe xd software.
-
-IMAGES NEEDED
+- Below are some mockups of the web app created using the adobe xd and illustrator software. Here is a link to the online [Adobe XD file](https://xd.adobe.com/view/481a767f-1f58-4463-994b-77439714df93-1d49/grid),
 
 <em>1.1 Design a web application that meets accessibility guidelines, follows the principles of UX design and presents a structured layout and navigation model, and meets its given purpose.</em>
 
-- The web application meets accessibility guidelines by incorporating semantic HTML elements, ensuring compatibility with assistive technologies, and providing meaningful alt tags for all my images used. It maintains a high colour contrast between text and backgrounds for the best readability. The design follows UX principles, offering intuitive navigation, responsive layouts for various screen sizes, and clear results from user interactions. The structured layout is built with a logical hierarchy, including a consistent header, main content area, and side bar to ensure users can navigate seamlessly. Overall, the site successfully fulfils its purpose by presenting information in an accessible, user-friendly, and visually engaging retro manner.
+- The web application meets accessibility guidelines by incorporating semantic HTML elements, ensuring compatibility with assistive technologies, and providing meaningful alt tags for all my images used. It maintains a high colour contrast between text and backgrounds for the best readability. The design follows UX principles, offering intuitive navigation, responsive layouts for various screen sizes, and clear results from user interactions. The structured layout is built with a logical hierarchy, including a consistent header, main content area, and side bar to ensure users can navigate seamlessly. Overall, the site successfully fulfils its purpose by presenting information in an accessible, user-friendly, and visually engaging retro manner. More information here [Testing.](/TEST.md)
 
-  <em>1.2 Design interactivity for a web application that lets the user initiate and control actions and gives feedback.</em>
+<em>1.2 Design interactivity for a web application that lets the user initiate and control actions and gives feedback.</em>
 
-- REtro weather features three major cities from around the world—Tokyo, London, and New York—with quick link buttons providing instant access to their current weather and time of day. Additionally, I have included a search bar that enables users to look up their desired location and receive real-time feedback on the weather and time of day for that location.
+- Retro weather features three major cities from around the world— Amsterdam, London, and New York — with quick link buttons providing instant access to their current weather and time of day. Additionally, I have included a search bar that enables users to look up their desired location and receive real-time feedback on the weather and time of day for that location.
 
-IMAGES NEEDED
+### Controls
+
+|             Side Bar Controls             |
+| :---------------------------------------: |
+| ![screenshot](/doumentation/controls.png) |
 
 <em>1.3 Write custom JavaScript, HTML and CSS code to create a responsive Front end web application consisting of one or more HTML pages with significant interactive
 functionality.</em>
 
 - I have developed a single-page, responsive front-end web application using a mobile-first approach. Media queries are used within my project to optimise the layout for various screen sizes, including standard tablet dimensions (min-width: 768px) and desktop resolutions (min-width: 1200px). The application is designed to provide significant interactivity through my custom JavaScript, HTML, and CSS.
 
+|                 Responsive                 |
+| :----------------------------------------: |
+| ![screenshot](/doumentation/min-width.png) |
+
 <em>1.4 Write JavaScript code to produce relevant responses to user actions.</em>
 
-- My JavaScript code dynamically fetches real-time weather data from an external API (http://weatherapi.com) and processes the response to display a meaningful feedback to users, such as current weather conditions (e.g., sunny, raining) and whether it is day or night in the searched location. Custom event listeners handle user interactions, including the quick link buttons for preset cities and the search functionality, which allows users to input their desired location. The application also incorporates error handling with a modal to inform users if an invalid location is entered or if the API request fails, ensuring a robust and user-friendly experience.
+- My JavaScript code dynamically fetches real-time weather data from an external [Weather API](http://weatherapi.com) and processes the response to display a meaningful feedback to users, such as current weather conditions (e.g, sunny, raining) and whether it is day or night in the searched location. Custom event listeners handle user interactions, including the quick link buttons for preset cities and the search functionality, which allows users to input their desired location. The application also incorporates error handling with a modal to inform users if an invalid location is entered or if the API request fails, ensuring a robust and user-friendly experience.
 
-  <em>1.5 Implement an interactive web application that incorporates images or graphics of usable resolution, legible, unobscured text, consistent styling, undistracted foregrounds.</em>
+|                 API                  |
+| :----------------------------------: |
+| ![screenshot](/doumentation/api.png) |
 
-- I achieved this by incorporating animated graphics, weather-themed backgrounds, and a frosted sidebar for the foreground on the desktop view. The sidebar hides part of the background image to ensure the displayed results are clear and easy for users to read.
+<em>1.5 Implement an interactive web application that incorporates images or graphics of usable resolution, legible, unobscured text, consistent styling, non-distracted foregrounds.</em>
 
-IMAGES NEEDED
+- I achieved this by incorporating animated graphics, weather-themed backgrounds, and a frosted sidebar for the foreground on the desktop view. The sidebar hides part of the background image to ensure the displayed results are clear and easy for users to read. This also helped with accessability requirements.
+
+|                 Interactive                  |
+| :------------------------------------------: |
+| ![screenshot](/doumentation/interactive.png) |
 
 <em>M(i) Design a web application following the principles of UX design which meets accessibility guidelines, is easy to navigate and allows the user to find information and resources intuitively.</em>
 
@@ -77,43 +96,57 @@ IMAGES NEEDED
 
 - My web application implements front-end interactivity by using vanilla JavaScript, APIs, and animated icon features. The vanilla JavaScript is utilised to manage DOM manipulation and event handling, such as updating the displayed weather information dynamically when users interact with the search bar or the quick link buttons.
 
-The application also uses the OpenWeather API using my unique key to fetch real-time weather data, which is then processed and displayed on the page using JavaScript. This allows users to view weather conditions and the time of day for specific locations, providing an interactive and personalised experience.
+- The application also uses the OpenWeather API using my unique key to fetch real-time weather data, which is then processed and displayed on the page using JavaScript. This allows users to view weather conditions and the time of day for specific locations, providing an interactive and personalised experience.
 
-Additionally, animated graphics and weather-themed backgrounds are incorporated to enhance the visual interactivity of the web application. Error handling with JavaScript ensures users receive appropriate feedback if an invalid location is entered or if the API fails to respond. These elements work together to create a highly interactive and user-friendly front end.
+|                1,API                 |                2.Icons                |
+| :----------------------------------: | :-----------------------------------: |
+| ![screenshot](/doumentation/api.png) | ![screenshot](/doumentation/icon.png) |
 
-<em>2.1 Write JavaScript code, that passes through a linter (e.g. JSLint) with no major issues and write validated HTML and CSS code.</em>
+- Additionally, animated graphics and weather-themed backgrounds are incorporated to enhance the visual interactivity of the web application. Error handling with JavaScript ensures users receive appropriate feedback if an invalid location is entered or if the API fails to respond. These elements work together to create a highly interactive and user-friendly front end.
+
+<em>[2.1](#2.1) Write JavaScript code, that passes through a linter (e.g. JSLint) with no major issues and write validated HTML and CSS code.</em>
 
 - See here [Test](/TEST.md)
 
-  <em>2.2 Write JavaScript functions that correctly implement compound statements such as “if statements” and/or loops.</em>
+<em>2.2 Write JavaScript functions that correctly implement compound statements such as “if statements” and/or loops.</em>
 
 - My application implements JavaScript functions that effectively use compound statements and loops to provide interactivity. For example, `if` statements handle the user input validation, dynamically update the UI based on weather conditions, and determine whether it is day or night. A `forEach` loop is used to attach event listeners to city buttons, enabling dynamic interaction.
 
-IMAGES NEEDED (Use code examples)
+|                1 If                 |                2 Loop                 |
+| :---------------------------------: | :-----------------------------------: |
+| ![screenshot](/doumentation/if.png) | ![screenshot](/doumentation/loop.png) |
 
 <em>2.3 Write code that intelligently handles empty or invalid input data.</em>
 
 - My application handles empty or invalid input data using conditional statements. For example, when a user submits the search form without entering a location, an `if` statement checks the input and displays an alert prompting the user to 'type in a city name'. Additionally, when fetching data from the Weather API, a `.catch()` block handles invalid API responses or errors by alerting the user that the 'city was not found' and resetting the application's state for the user to try again. These mechanisms ensure a smooth and error-tolerant user experience. With this modal in place it allows a smooth process for the user.
 
-IMAGES NEEDED (Modal)
+|                 Modal                  |
+| :------------------------------------: |
+| ![screenshot](/doumentation/modal.png) |
 
 <em>2.4 Implement appropriate working functionality for all project requirements.</em>
 
 - My web application fulfils all the project requirements by providing a responsive and interactive web experience. Users can search for weather information using a search bar or access quick links for pre-defined cities. It fetches real-time weather data and time of day from the Weather API key. It updates the user interface with accurate and accessible information. The application incorporates error handling for empty or invalid input, ensuring a smooth user experience, and meets accessibility standards with semantic HTML and responsive design. All features work seamlessly to achieve the project requirements.
 
-PICTURES NEEDED (search screen shot/ )
+|               Semantic HTML               |
+| :---------------------------------------: |
+| ![screenshot](/doumentation/semantic.png) |
 
 <em>2.5 Organise non-trivial JavaScript code in external file(s) linked at the bottom of the body element (or bottom of head element if needs to be loaded before the body HTML) and CSS code in external files linked to HTML in the head element.</em>
 
 - My project adheres to the requirement of organising non-trivial JavaScript and CSS code in external files. The JavaScript code is stored in javascript.js, located in the assets folder, and is linked at the bottom of the <body> element in the HTML file to ensure it loads after the page content, optimising performance. The CSS code is stored in an external file named styles.css, also in the assets folder, and is linked in the <head> element. This approach ensures the separation of structure, styling, and functionality, improving code maintainability and readability. Additional external resources, such as fonts and icons, are linked in the <head> element to enhance the user interface.
 
-PICTURES NEEDED (give extrenal links images )
+|               HTML Links               |
+| :------------------------------------: |
+| ![screenshot](/doumentation/links.png) |
 
 <em>2.6 Write code that meets minimum standards for readability (comments, indentation, consistent and meaningful naming conventions).</em>
 
 - My code meets the minimum standards for readability by including comments for future developers, proper indentation by using the visual studio code extension 'prettier', and consistent, meaningful naming conventions. I have also used comments throughout my JavaScript file to explain key functionality, such as event listeners, API calls, and conditional logic, helping clarify the purpose of each section for anyone working on my project at a later date. Indentation is consistent across all files, ensuring the code structure is easy to follow. Variable and function names, such as fetchWeatherData, cityInput, and dayOfTheWeek, are descriptive and aligned with their purpose, making the code understandable for other developers. This approach ensures that the code is clear, maintainable, and adheres to best practices.
 
-NEEDED PICTURES
+|                 Comments                  |
+| :---------------------------------------: |
+| ![screenshot](/doumentation/comments.png) |
 
 <em>2.7 Name files consistently and descriptively, without spaces or capitalisation to allow for crossplatform compatibility. </em>
 
@@ -122,11 +155,19 @@ NEEDED PICTURES
 [Desktop Daytime Images Folder](/assets/images/desktop/day/)
 [Desktop Nighttime Images Folder](/assets/images/desktop/night/)
 
+|                 Files                  |
+| :------------------------------------: |
+| ![screenshot](/doumentation/files.png) |
+
 <em>2.8 Write code that does not generate internal errors on the page or in the console as a result of user actions.</em>
 
-- NEEDS WRITE UP AND IMAGES
+- To ensure my code does not generate internal errors on the page or in the console due to user actions, I implemented thorough input validation and error handling. For example, when users search for a city, the input is checked to ensure it’s not empty, and invalid or unrecognised city names trigger an alert without breaking the application. I used the .catch() method to handle errors from the API, such as network issues or invalid responses, ensuring users are informed of the problem while keeping the app stable. By validating data before dynamically updating the DOM, I prevent null or undefined references. I also tested the application extensively, simulating user actions like rapid clicks and invalid searches, to confirm there are no errors or warnings in the console. As a result, the app runs smoothly and remains user-friendly.
 
-  <em>2.9 Organise code and assets files in directories by file type.</em>
+|                 Catch                  |
+| :------------------------------------: |
+| ![screenshot](/doumentation/catch.png) |
+
+<em>2.9 Organise code and assets files in directories by file type.</em>
 
 - I have organised my project files and assets into directories based on file type to ensure clarity and maintainability. The assets folder contains subdirectories for specific types of files. The images folder stores all weather-related backgrounds, further divided into daytime and nighttime folders to categorise images based on time of day and if they are for mobile or desktop. Animated icons are stored in an icons folder, with filenames clearly describing the weather conditions they represent. The css folder contains the styles.css file for all styling, while the javascript.js file is located directly in js folder. This directory structure ensures logical grouping of files, making the project easy to navigate and manage.
 
@@ -174,6 +215,10 @@ project/
 
 - I have created a custom 404.html page and within GitHub Pages, it directs users to this page when they navigate to nonexistent. To improve usability, I added a 'Back to Home' button that allows users to return to the main page (index.html). Additionally, the page features a countdown timer starting at 10 seconds, which automatically redirects users to index.html when it reaches 0, ensuring a seamless experience without requiring any manual input.
 
+|              Countdown               |
+| :----------------------------------: |
+| ![screenshot](/doumentation/404.png) |
+
 ### 3. Testing the Application
 
 Please see [Test Readme](/TEST.md) for the test section
@@ -184,11 +229,17 @@ Please see [Test Readme](/TEST.md) for the test section
 
 - The interactive front-end web application has been deployed to GitHub Pages, a cloud-based hosting platform. Using GitHub Desktop for version control, the application was pushed from the local repository to GitHub. GitHub Pages was enabled in the repository settings, hosting the application directly from the main branch. This ensures a smooth and reliable deployment process, making the application accessible online
 
+|                 Pages                  |
+| :------------------------------------: |
+| ![screenshot](/doumentation/pages.png) |
+
 <em>4.1 Deploy a final version of the interactive web application code to a cloud-based hosting platform (e.g. GitHub Pages). </em>
 
 - I successfully deployed my web application to GitHub Pages, utilizing GitHub Desktop for version control and management. The deployment process included pushing the local codebase to a GitHub repository and enabling GitHub Pages in the repository settings. I created a new branch for specific sections of the website and merged them into the main branch once the code, developed in Visual Studio Code, was finalized and pushed to the repository.
 
-PICTURES NEEDED
+|               GitHub Desktop               |
+| :----------------------------------------: |
+| ![screenshot](/doumentation/ghdesktop.png) |
 
 <em>4.2 Ensure that the deployed application is free of commented out code and has no broken internal links. </em>
 
@@ -196,15 +247,23 @@ PICTURES NEEDED
 
   <em>4.3 Use Git & GitHub for version control of an interactive web application up to deployment.</em>
 
-- I have used github desktop for pulling the repo from github initally and then I have also used it to push my code and create new branches.
+  |                 GitHub                  |
+  | :-------------------------------------: |
+  | ![screenshot](/doumentation/pushes.png) |
 
-PICTURES NEEDED
+- I have used github desktop for pulling the repo from github initially and then I have also used it to push my code and create new branches.
+
+|               GitHub Desktop                |
+| :-----------------------------------------: |
+| ![screenshot](/doumentation/ghdesktop2.png) |
 
 <em>M(v) Commit often, for each individual feature/fix, ensuring that commits are small, well-defined and have clear, descriptive messages.</em>
 
 - I committed often to my project, ensuring each commit was tied to a specific feature or fix with clear, descriptive messages for others to understand. However, committing too frequently with minimal changes caused deployment issues. To resolve this, I committed after completing significant sections or creating new branches, ensuring a stable deployment process while maintaining a clear and organised commit history.
 
-PICTURES NEEDED
+|                 Branches                  |
+| :---------------------------------------: |
+| ![screenshot](/doumentation/branches.png) |
 
 ### 5. Version Control and Documentation
 
@@ -212,7 +271,9 @@ PICTURES NEEDED
 
 - The development process was tracked using GitHub, with regular commits tied to specific features or fixes and clear messages. Branches were created for major features, allowing independent development and testing before merging. GitHub's commit history documents the project's progression, ensuring a structured and transparent workflow.
 
-PICTURES NEEDED
+|                  Pushes                  |
+| :--------------------------------------: |
+| ![screenshot](/doumentation/pushes2.png) |
 
 <em>5.1 Document the full development cycle, with clear evidence given through commit messages, the README.</em>
 
@@ -255,47 +316,70 @@ The application combines functionality with an engaging user experience, making 
 
 - My README file is written using consistent and effective Markdown formatting, ensuring a well-structured and easy-to-follow document. I have used clear headings, subheadings, and lists to organise the information, making it accessible for readers. To minimise spelling errors I have used a spelling extension in Visual Studio Code to check the text before finalising the README. This approach helps that the document is error-free, polished, and adheres to best practices in Markdown formatting. I have also used the 'Markdown Preview extension with visual studio code that shows the output of my readme file on the right hand side.
 
-IMAGE OF README PREVIEW
+|                      Preview                      |
+| :-----------------------------------------------: |
+| ![screenshot](/doumentation/readme-extention.png) |
 
 <em>M(vi) Present a clear rationale for the development of the project, in the README, demonstrating that it has a clear, welldefined purpose addressing the needs of, and user stories for a particular target audience (or multiple related audiences). </em>
 
 - The development of this project was driven by the need to provide a simple, interactive, and visually engaging tool for accessing real-time weather updates. The application addresses the needs of various target audiences. It offers a fast, intuitive interface that displays weather data and time information. For example, the end user can quickly check the weather in different cities to plan their trips. The application’s design and features, such as location-based searches and dynamic visuals, ensure it meets these needs effectively.
 
-  <em>M(vii) Document the UX design work undertaken for this project, including any wireframes, mock-ups, diagrams created as part of the design process, and the reasoning behind it. Include diagrams created as part of the design process and demonstrate that these have been followed through to implementation. </em>
+<em>M(vii) Document the UX design work undertaken for this project, including any wireframes, mock-ups, diagrams created as part of the design process, and the reasoning behind it. Include diagrams created as part of the design process and demonstrate that these have been followed through to implementation. </em>
 
-- Before starting the project, I researched weather applications by watching YouTube videos to understand effective layouts and features, selecting one that inspired the structure of my application. Using Adobe XD, I created wireframes for mobile, tablet, and desktop views, customising the design to include key features such as a search bar, quick access city buttons, and a clean weather display. Mock-ups were also developed in Adobe XD, incorporating the chosen colour palette, typography, and interactive elements to ensure a cohesive user experience. A flow diagram was created to outline the user journey, identifying potential navigation issues and ensuring intuitive interaction. These wireframes, mock-ups, and diagrams were followed closely during implementation, and the final application reflects the planned designs, maintaining the intended responsive layout and functionality.
+- Before starting the project, I researched weather applications by watching YouTube videos to understand effective layouts and features, selecting one that inspired the structure of my application. Using Adobe XD, I created wireframes for mobile, tablet, and desktop views, customising the design to include key features such as a search bar, quick access city buttons, and a clean weather display. Mock-ups were also developed in Adobe XD, incorporating the chosen colour palette, typography, and interactive elements to ensure a cohesive user experience. A flow diagram was created to outline the user journey, identifying potential navigation issues and ensuring intuitive interaction. These wireframes, mock-ups, and diagrams were followed closely during implementation, and the final application reflects the planned designs, maintaining the intended responsive layout and functionality. [Adobe XD File here](https://xd.adobe.com/view/481a767f-1f58-4463-994b-77439714df93-1d49/grid),
 
-  <em>M(viii) Document testing fully to include evaluation of bugs found and their fixes and explanation of any bugs that are left unfixed. M(viii) Fully document the deployment procedure in a section in the README file.</em>
+<em>M(viii) Document testing fully to include evaluation of bugs found and their fixes and explanation of any bugs that are left unfixed. </em>
 
 - Testing and Bug Evaluation
   The application underwent thorough testing to ensure functionality, usability, and responsiveness across different devices and browsers at various times of day and in different weather conditions. During testing, the following bugs were identified and resolved:
 
 Bug: The search bar allowed empty submissions, resulting in an error when fetching weather data.
+
+|         Bug with blank screen         |
+| :-----------------------------------: |
+| ![screenshot](/doumentation/bug1.png) |
+
 Fix: An if statement was added to validate input and alert the user if the search field was left empty.
+
+|                 Modal                  |
+| :------------------------------------: |
+| ![screenshot](/doumentation/modal.png) |
+
 Bug: On mobile devices, the layout of the weather details panel overlapped with other elements.
-Fix: Adjusted CSS to include additional padding and margin for smaller screens, ensuring proper spacing.
-Bug: API errors (e.g., invalid location) were not handled gracefully, causing the app to display no feedback.
 
-Deployment Procedure
-The application was deployed using GitHub Pages, with the following steps:
+|                 Overlap                  |
+| :--------------------------------------: |
+| ![screenshot](/doumentation/overlap.png) |
 
-The project files were committed and pushed to a GitHub repository using GitHub Desktop.
-In the GitHub repository settings, GitHub Pages was enabled under the "Pages" section.
-The main branch was selected as the source for deployment, and the default folder (root) was used.
-The application was then tested on its live URL to ensure all features worked as expected in the deployed environment.
-These steps are documented in the README file, along with the live URL of the deployed application for user access.
+Fix: Adjusted CSS to include additional padding and margin-bottom for smaller screens, ensuring proper spacing.
 
-IMAGES NEEDED
+|                 Overlap Fix                 |
+| :-----------------------------------------: |
+| ![screenshot](/doumentation/overlapfix.png) |
+
+<em>M(viii) Fully document the deployment procedure in a section in the README file.</em>
+
+- Deployment Procedure - The application was deployed using GitHub Pages, with the following steps:
+
+- The project files were committed and pushed to a GitHub repository using GitHub Desktop.
+  In the GitHub repository settings, GitHub Pages was enabled under the "Pages" section.
+  The main branch was selected as the source for deployment, and the default folder (root) was used.
+  The application was then tested on its live URL to ensure all features worked as expected in the deployed environment.
+  These steps are documented in the README file, along with the live URL of the deployed application for user access.
+
+|                 Commits                  |
+| :--------------------------------------: |
+| ![screenshot](/doumentation/commits.png) |
 
 ### 6. Credits and Dependencies
 
 - Fonts - Google fonts and Font Awesome for icons
-- Animated Icons - https://basmilius.github.io/weather-icons/index.html
-- Retro images - http://elements.envato.com/ I collected some images from here and made my own wallapapers.
-- CSS Reset - https://www.joshwcomeau.com/css/custom-css-reset/?ref=gorillasun.de
+- Animated Icons - [LINK HERE](https://basmilius.github.io/weather-icons/index.html)
+- Retro images - I collected some images from here and made my own wallapapers. [LINK HERE](http://elements.envato.com/)
+- CSS Reset - [LINK HERE](https://www.joshwcomeau.com/css/custom-css-reset/?ref=gorillasun.de)
 
-- Weather API - https://www.weatherapi.com/docs/
+- Weather API - [LINK HERE](https://www.weatherapi.com/docs/)
 
-- Stackover Flow - I had to search a number of Stackoverflow threads to help me with my javascript. https://stackoverflow.com/questions/62376115/how-to-obtain-open-weather-api-date-time-from-city-being-fetched
+- Stackover Flow - I had to search a number of Stackoverflow threads to help me with my javascript. [LINK HERE](https://stackoverflow.com/questions/62376115/how-to-obtain-open-weather-api-date-time-from-city-being-fetched)
 
-[Test](/TEST.md)
+- Youtube - I used this demo for snippets of code and design inspiration but I didn not copy it 100%. [LINK HERE](https://www.youtube.com/watch?v=QGzgE7jWDxk&t=327s)
