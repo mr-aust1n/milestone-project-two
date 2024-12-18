@@ -295,8 +295,7 @@ Please see [Test Readme](/TEST.md) for the test section
 
 <em>5.2 Write a README.md file for the interactive web application that explains its purpose and the value that it provides to its users.</em>
 
-- Purpose
-  The Retro Weather application provides users with real-time weather updates and time information for their chosen location. Designed with accessibility and ease of use in mind, the application delivers a visually engaging experience with animated graphics and responsive layouts. It serves as a reliable tool for users to quickly access accurate weather data, whether at home or on the go.
+- Purpose - The Retro Weather application provides users with real-time weather updates and time information for their chosen location. Designed with accessibility and ease of use in mind, the application delivers a visually engaging experience with animated graphics and responsive layouts. It serves as a reliable tool for users to quickly access accurate weather data, whether at home or on the go.
 
 ## Value to Users
 
@@ -339,7 +338,7 @@ Bug: The search bar allowed empty submissions, resulting in an error when fetchi
 | :-----------------------------------: |
 | ![screenshot](/doumentation/bug1.png) |
 
-Fix: An if statement was added to validate input and alert the user if the search field was left empty.
+Fix: An if statement was added to validate input and an alert was added if the search field was left empty.
 
 |                 Modal                  |
 | :------------------------------------: |
@@ -382,4 +381,14 @@ Fix: Adjusted CSS to include additional padding and margin-bottom for smaller sc
 
 - Stackover Flow - I had to search a number of Stackoverflow threads to help me with my javascript. [LINK HERE](https://stackoverflow.com/questions/62376115/how-to-obtain-open-weather-api-date-time-from-city-being-fetched)
 
-- Youtube - I used this demo for snippets of code and design inspiration but I didn not copy it 100%. [LINK HERE](https://www.youtube.com/watch?v=QGzgE7jWDxk&t=327s)
+- Youtube - I used this demo for snippets of code and design inspiration but I did not copy it 100%. [LINK HERE](https://www.youtube.com/watch?v=QGzgE7jWDxk&t=327s)
+
+- ESlint - This was used to check my Javascript for errors. [eslint](https://eslint.org/docs/latest/)
+
+- Jest - This was used for my automated testing. [Jest](https://jestjs.io/docs/getting-started)
+
+- Stackover Flow - I used this for my javascript countdown and redirect.[LINK HERE](https://codepen.io/DharaPatel/pen/dyPwwKO)
+
+|                 Countdown                  |
+| :----------------------------------------: |
+| ![screenshot](/doumentation/countdown.png) |

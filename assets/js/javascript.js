@@ -94,13 +94,13 @@ function fetchWeatherData() {
         conditionCode === 1009
       ) {
         app.classList.add(timeOfDay, "cloudy"); // Cloudy weather
-        btn.style.background = timeOfDay === "night" ? "#181e27" : "#fa6d1b"; // Button color for cloudy
+        btn.style.background = timeOfDay === "night" ? "#fff" : "#fa6d1b"; // Button color for cloudy
       } else if (conditionCode >= 1063 && conditionCode <= 1207) {
         app.classList.add(timeOfDay, "rainy"); // Rainy weather
-        btn.style.background = timeOfDay === "night" ? "#325c80" : "#B42EAE"; // Button color for rainy
+        btn.style.background = timeOfDay === "night" ? "#fff" : "#B42EAE"; // Button color for rainy
       } else if (conditionCode >= 1210 && conditionCode <= 1225) {
         app.classList.add(timeOfDay, "snow"); // Snowy weather
-        btn.style.background = timeOfDay === "night" ? "#1b1b1b" : "#2E94B4"; // Button color for snow
+        btn.style.background = timeOfDay === "night" ? "#fff" : "#2E94B4"; // Button color for snow
       }
 
       // Change weather icon based on the weather condition
