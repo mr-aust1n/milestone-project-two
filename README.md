@@ -1,9 +1,6 @@
 # Project Name: (Retro Weather)
 
-External Links
-[Repo](https://github.com/mr-aust1n/milestone-project-two/actions)
-
-[GHPages](https://mr-aust1n.github.io/milestone-project-two/)
+[Live Preview](https://mr-aust1n.github.io/milestone-project-two/)
 
 Internal Test Links
 [Test](/TEST.md)
@@ -27,13 +24,19 @@ Internal Test Links
 
 This unit aims to provide learners with the knowledge and skills needed to build a dynamic, interactive Front end web application. It includes understanding user input and control when interacting with a web application. It also includes understanding the principles of automated and manual testing for debugging
 
-[1. Design, Develop, and Implement](#1-design-develop-and-implement)
-[2. Implement Front-end Interactivity](#2-implement-front-end-interactivity)
-[3. Testing the Application](#3-testing-the-application)
-[4. Deployment to a Cloud Platform](#4-deployment-to-a-cloud-platform)
-[5. Version Control and Documentation](#5-version-control-and-documentation)
-[6. Credits and Dependencies](#6-Credits-and-Dependencies)
-[Testing](/TEST.md)
+- [1. Design, Develop, and Implement](#1-design-develop-and-implement)
+
+- [2. Implement Front-end Interactivity](#2-implement-front-end-interactivity)
+
+- [3. Testing the Application](#3-testing-the-application)
+
+- [4. Deployment to a Cloud Platform](#4-deployment-to-a-cloud-platform)
+
+- [5. Version Control and Documentation](#5-version-control-and-documentation)
+
+- [6. Credits and Dependencies](#6-Credits-and-Dependencies)
+
+- [Testing](/TEST.md)
 
 ### 1. Design, Develop, and Implement
 
@@ -171,45 +174,9 @@ functionality.</em>
 
 - I have organised my project files and assets into directories based on file type to ensure clarity and maintainability. The assets folder contains subdirectories for specific types of files. The images folder stores all weather-related backgrounds, further divided into daytime and nighttime folders to categorise images based on time of day and if they are for mobile or desktop. Animated icons are stored in an icons folder, with filenames clearly describing the weather conditions they represent. The css folder contains the styles.css file for all styling, while the javascript.js file is located directly in js folder. This directory structure ensures logical grouping of files, making the project easy to navigate and manage.
 
-project/
-│
-├── assets/
-│ ├── css/
-│ │ └── styles.css
-│ │ └── styles_404.css
-│ ├── images/
-│ │ │
-│ │ ├──sunny.png
-│ │ │
-│ │ ├── desktop/
-│ │ │ ├── day/
-│ │ │ │ ├── clear.png
-│ │ │ │ ├── cloudy.png
-│ │ │ │ ├── rainy.png
-│ │ │ │ └── snowy.png
-│ │ │ ├── night/
-│ │ │ │ ├── clear.png
-│ │ │ │ ├── cloudy.png
-│ │ │ │ ├── rainy.png
-│ │ │ │ └── snowy.png
-│ │ ├── mobile/
-│ │ │ ├── day/
-│ │ │ │ ├── clear.png
-│ │ │ │ ├── cloudy.png
-│ │ │ │ ├── rainy.png
-│ │ │ │ └── snowy.png
-│ │ │ ├── night/
-│ │ │ │ ├── clear.png
-│ │ │ │ ├── cloudy.png
-│ │ │ │ ├── rainy.png
-│ │ │ │ └── snowy.png
-│ ├── js/
-│ │ └── javascript.js
-│ │ └── 404.js
-│ ├── test/
-│ │ └── fetchWeatherData.test.js
-│
-├── index.html
+|               File Structure               |
+| :----------------------------------------: |
+| ![screenshot](/doumentation/structure.jpg) |
 
 <em>M(iv) Write code such that users who direct to a nonexistent page or resource are redirected back to the main page without having to use browser navigation buttons.</em>
 
