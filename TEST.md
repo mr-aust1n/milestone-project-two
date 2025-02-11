@@ -105,6 +105,10 @@
 
 <em>3.1 Explain the principles of automated and manual testing and when each might be deployed. </em>
 
+- Automated testing involves using scripts and software tools to execute test cases. This makes it efficient for repetitive and large-scale testing, ensuring consistency and speed. It is also ideal for unit testing, continuous integration, and performance testing.
+
+Manual testing relies on humans to do the testing by exploring the application, identify edge cases, and validate usability, making it crucial for exploratory, UI, and user experience testing. Manual testing is used for human judgment, and real-world user scenarios need assessment and feedback.
+
 - I used both automated and manual testing to ensure my project works smoothly. For automated testing, I used Jest to test functions like fetchWeatherData to verify that API responses are handled correctly and the DOM updates as expected. I also used ESLint to identify and fix potential issues in my code, ensuring it is clean and error-free. Manual testing was essential for checking edge cases, such as entering invalid or blank city names, rapidly clicking city buttons, and simulating slow or failed network conditions. Additionally, I used Lighthouse in Chrome DevTools to check accessibility and performance. By combining automated testing with manual testing, I ensured the application is functional, stable, and user-friendly.
 
 <em>3.2 Design and implement testing procedures (automated or manual) to assess functionality, usability and responsiveness of the web application. </em>
@@ -112,6 +116,36 @@
 - To test the functionality, usability, and responsiveness of my web application, I used both automated and manual testing. For functionality, I used Jest to test key functions like fetchWeatherData to ensure API responses update the DOM correctly. For usability, I manually tested scenarios such as entering invalid city names, clicking city buttons, and handling rapid interactions to confirm smooth performance. To check responsiveness, I used Chrome DevTools to simulate different screen sizes, ensuring the app looks and works well on mobile, tablet, and desktop devices. I also used ESLint to fix code issues and Lighthouse to assess accessibility and performance. This approach ensured the app is functional, user-friendly, and responsive.
 
 <em>3.3 Insert screenshots of the finished project that align to relevant user stories.</em>
+
+- User Story 1: As a user, I want to search for weather information by city name, so that I can quickly find the weather details for my desired location.
+
+  |              User Story 1               |
+  | :-------------------------------------: |
+  | ![screenshot](/doumentation/users1.jpg) |
+
+- User Story 2: As a user, I want to see the current temperature and weather conditions displayed prominently, so that I can quickly understand the weather at a glance.
+
+|              User Story 2               |
+| :-------------------------------------: |
+| ![screenshot](/doumentation/users2.jpg) |
+
+- User Story 3: As a user, I want to receive error messages when a city is not found, so that I understand when my search was unsuccessful and can try again.
+
+|              User Story 3               |
+| :-------------------------------------: |
+| ![screenshot](/doumentation/users3.jpg) |
+
+- User Story 4: As a user, I want the website to have a retro design aesthetic, so that I can enjoy a nostalgic and visually appealing experience. I did this with images and fonts.
+
+|              User Story 4               |
+| :-------------------------------------: |
+| ![screenshot](/doumentation/users4.jpg) |
+
+User Story 5: As a user, I want the website to be responsive and accessible on various devices, so that I can check the weather conveniently from my phone, tablet, or computer.
+
+|                        User Story 5                         |
+| :---------------------------------------------------------: |
+| ![screenshot](/doumentation/laptop-phone-tablet-mockup.png) |
 
 - All images have been added throughout the readme files to show how they have met the user stories.
 

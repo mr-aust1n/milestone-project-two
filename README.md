@@ -1,9 +1,12 @@
-# Project Name: (Retro Weather)
+# Project Name: Retro Weather
 
-[Live Preview](https://mr-aust1n.github.io/milestone-project-two/)
+Live Preview
+
+- [Git Hub Pages](https://mr-aust1n.github.io/milestone-project-two/)
 
 Internal Test Links
-[Test](/TEST.md)
+
+- [Test](/TEST.md)
 
 ### Device Layout
 
@@ -188,7 +191,7 @@ functionality.</em>
 
 ### 3. Testing the Application
 
-Please see [Test Readme](/TEST.md) for the test section
+Please see [Test Readme](/TEST.md) for the test section and user stories
 
 ### 4. Deployment to a Cloud Platform
 
